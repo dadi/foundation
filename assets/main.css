@@ -383,6 +383,9 @@ footer .cnt:last-of-type {
   footer {
     background-image: none;
   }
+  footer .nav {
+    display: none;
+  }
 }
 @media only screen and (min-width: 840px) {
 footer .inline li {

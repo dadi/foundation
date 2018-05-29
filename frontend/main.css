@@ -308,6 +308,9 @@ footer .cnt:last-of-type {
   footer {
     background-image: none;
   }
+  footer .nav {
+    display: none;
+  }
 }
 
 
