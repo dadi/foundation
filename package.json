@@ -1,0 +1,24 @@
+{
+  "name": "dadi-foundation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "David Longworth <davidlongworth.com>",
+  "license": "ISC",
+  "scripts": {
+    "watch": "watch 'npm run build' frontend/ -d -u",
+    "build": "postcss --use postcss-import --use autoprefixer --autoprefixer.browsers '> 1%' frontend/main.css -o assets/main.css --replace --map && npm run mincss",
+    "mincss": "cleancss -o assets/main.min.css frontend/main.css --source-map && npm run minjs",
+    "minjs": "uglifyjs frontend/main.js -o assets/main.min.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "clean-css-cli": "^4.1.9",
+    "postcss-cli": "^4.1.1",
+    "postcss-import": "^10.0.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "uglify-js": "^3.3.9"
+  }
+}
