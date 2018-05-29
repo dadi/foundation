@@ -13,6 +13,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-weight: 200;
   background-image: linear-gradient(left bottom, #f9f8f6 0%, #ffffff 100%);
