@@ -321,7 +321,7 @@ footer .inline li {
   margin-right: 6px;
 }
 footer .inline li:after {
-  content: '·';
+  content: '\00B7';
   font-size: 26px;
   padding-left: 20px;
   color: #bbb;
