@@ -280,6 +280,9 @@ main a:hover {
   border: 0;
   margin-bottom: 0;
 }
+.principles a {
+  border-bottom-color: #ddd;
+}
 
 
 .tab-nav {
