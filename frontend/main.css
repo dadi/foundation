@@ -37,7 +37,8 @@ h2 {
   margin-bottom: 2em;
   color: #04111d;
 }
-footer h2 {
+footer h2,
+.bg-dark h2 {
   color: #84878b;
   border-color: #525357;
 }
@@ -96,7 +97,8 @@ header h1 img {
   padding: 2px;
   color: #04111d;
 }
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: #f44b00;
 }
 
@@ -200,6 +202,18 @@ header h1 img {
 .photo img {
   width: 100%;
   display: block;
+}
+
+
+.btn {
+  background: #f44b00;
+  color: #fff;
+  border-radius: 100px;
+  padding: 5px 12px;
+  display: inline-block;
+}
+.btn:hover {
+  color: #fff;
 }
 
 
@@ -414,7 +428,8 @@ footer .num {
   color: #444547;
 }
 
-footer {
+footer,
+.bg-dark {
   background-color: #292a2b;
   background-color: #292a2b;
   background-image: url(../assets/footer.jpg);
@@ -495,4 +510,48 @@ footer .inline li:last-of-type {
 footer .inline li:last-of-type:after {
   content: '';
 }
+}
+
+
+form label {
+  display: block;
+  font-weight: 700;
+  margin-top: 18px;
+  font-size: 12px;
+  position: relative;
+  color: #888;
+  font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
+}
+form input {
+  font-size: 15px;
+  border: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background-color: transparent;
+  font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+form fieldset {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 2px 2px 15px 0 rgba(0,0,0,.04);
+  border: 0;
+  margin-bottom: 40px;
+}
+form legend {
+  background: #fff;
+  padding: 10px 20px;
+  margin: -20px;
+  color: #f44b00;
+}
+form .btn {
+  border: 0;
+  font-size: 15px;
+  font-family: 'Roboto';
+  cursor: pointer;
 }
