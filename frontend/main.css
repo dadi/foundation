@@ -109,6 +109,10 @@ header h1 img {
     position: absolute;
     left: 6%; right: 6%
   }
+  .header--static {
+    position: static;
+    margin: 30px 6% 0 6%;
+  }
   header h1 img {
     max-width: 200px;
   }
