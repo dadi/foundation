@@ -1,0 +1,174 @@
+<div class="cnt">
+  <p>Thank you to everyone who submitted an application, the Challenge Award is now closed for this round. We will be in touch with those who have been shortlisted by the 10th of August.</p>
+  <p>Look out for future Challenge Award opportunities later in the year.</p>
+</div>
+
+{! <div class="cnt">
+  <p>We are incredibly excited to announce our first Challenge Award</p>
+
+  <p>We would love to hear from charities/not for profits who want to harness technology to support democracy. The successful applicant will receive £10,000 and expert support/mentorship.</p>
+  <br>
+  <p><a href="#apply" class="btn">Apply now</a></p>
+</div>
+
+<div class="cnt">
+  <h2>The Challenge</h2>
+
+  <p>Less than 50% of people live in fully functioning democracies. Following more than a decade of declining global freedom, the rights of minorities, the rule of law, freedom of the press and free and fair elections are all under threat.</p>
+
+  <p>We have the opportunity to help shape a paradigm shift enabling truly transparent and accountable governance in an era where we are at risk of more elections but ever decreasing democracy.</p>
+
+  <p>Our first award will focus on how technology can be used to counter this threat by:</p>
+
+  <ul>
+    <li>increasing access to justice</li>
+    <li>strengthening civil society</li>
+    <li>empowering citizen journalists OR</li>
+    <li>equipping future human rights activists and technologists to build and participate in more robust democracies. </li>
+  </ul>
+</div>
+
+<div class="cnt">
+  <h2>How it works</h2>
+
+  <p>In addition to the £10,000 the successful applicant will be able to access extensive technical support, potentially making significant savings on tech development costs. The successful team will do an initial diagnostics session with tech and project management experts to identify specific support needs. Depending on their needs we will offer the following:</p>
+
+  <ul>
+    <li>Access to dedicated technical expertise including, where needed, assistance with user research, open source, agile project management, design and content development</li>
+    <li>Tech for Good advice, ongoing project management support and mentorship</li>
+    <li>Continued support to ensure sustainability and scalability</li>
+  </ul>
+</div>
+
+<div class="cnt">
+  <h2>REQUIREMENTS</h2>
+
+  <p>The successful project will demonstrate: </p>
+  
+  <ul>
+    <li>A sound understanding of the challenge they are seeking to address</li>
+    <li>A clear vision of why and how tech is the best tool to address these needs</li>
+    <li>A passionate team with the skills to deliver!</li>
+  </ul>
+</div>
+
+<div class="cnt">
+  <h2>TIMELINE</h2>
+
+  <p>31st July - applications due</p>
+
+  <p>10th August - shortlist announced </p>
+
+  <p>7th September - infographic, budget and short project outline due </p>
+
+  <p>18th September - winner announced </p>
+
+  <p>The winner will receive funding in October.</p>
+</div>
+
+<div class="cnt"><a name="apply" id="apply"></a>
+  <h2>APPLICATION</h2>
+
+  <form method="post" action="https://formspree.io/jennifer@dadi.foundation">
+    <fieldset>
+      <legend>About you</legend>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address">
+
+      <label for="org">Organisation</label>
+      <input type="text" id="org" name="org" placeholder="">
+    </fieldset>
+
+    <fieldset>
+      <legend>Your idea</legend>
+
+      <label for="project">Project title</label>
+      <input type="text" id="project" name="project" placeholder="">
+
+      <label for="video">Video</label>
+      <input type="text" id="video" name="video" placeholder="e.g., youtube or vimeo link">
+    </fieldset>
+
+    <fieldset>
+      <button class="btn" type="submit">Submit form</button>
+    </fieldset>
+  </form>
+</div>
+
+</main>
+
+<main class="bg-dark">
+<div class="cnt">
+  <h2>APPLICATION GUIDELINES</h2>
+
+  <p>Please submit a short video (max 3/4 minutes) outlining your project.</p>
+
+  <p>You might want to consider the following:</p>
+  
+  <ul>
+    <li>Why is the project needed? </li>
+    <li>What is the project trying to do? What is the focus? Who would benefit? How? Where?</li>
+    <li>What is the tech part? Why is this the best tool? </li>
+    <li>How would the funds and support be used? </li>
+    <li>What are the intended outputs? </li>
+    <li>What challenges do you foresee?</li>
+    <li>How could the project be scaled? What would success look like in 2-3 years? </li>
+    <li>What experience, knowledge and motivation do you bring? </li>
+  </ul>
+
+  <p>You do not need to spend a lot of time creating the perfect footage, a simple video of someone explaining your idea shot on a phone camera will work.</p> 
+
+  <p>Shortlisted applicants will be asked to submit:</p>
+
+  <ul>
+    <li>An infographic which explains the tech element of the project to potential beneficiaries </li>
+    <li>A brief project outline (maximum 400 words) </li>
+    <li>A draft budget</li>
+    <li>Information to confirm the identity and financial status of the applicant (including a redacted bank statement, annual report, financial statements and relevant governing documents).</li>
+  </ul>
+</div>
+
+<div class="cnt">
+  <h2>FUNDING GUIDELINES</h2>
+
+  <p>What we will fund</p>
+
+  <ul>
+    <li>Projects that use technology to support or develop robust and inclusive democracies or that enable human rights activists or technologists to be better equipped to build and participate in such democracies. </li>
+    <li>Projects of approximately 3-6 months (although we will consider applications for shorter or longer projects) </li>
+  </ul>
+
+  <p style="margin-top:50px">Who we will fund</p>
+
+  <ul>
+    <li>We fund registered charities and NGOs</li>
+    <li>We may fund unregistered organisations that have charitable purposes (e.g. Social Enterprises) providing the funds are to be used exclusively to fund activities, services or outcomes that are intended to further our charitable purposes and are for the public benefit</li>
+    <li>We will not normally support applications from large national or international charities i.e. those with an annual income in excess of £5 million or charities dedicated to issues deemed by the Trustees to be already well funded within the UK or Internationally. </li>
+  </ul>
+
+  <p style="margin-top:50px">What we are unlikely to fund:</p>
+
+  <ul>
+    <li>Upgrades to internal IT such as CRM systems</li>
+    <li>Hardware development </li>
+    <li>Updating website and routine social media campaigns</li>
+    <li>Capacity-building to make an organisation more ‘digital ready’</li>
+    <li>Monitoring and evaluation platforms.</li>
+  </ul>
+
+  <p style="margin-top:50px">What we will not fund</p>
+
+  <ul>
+    <li>Applications from Individuals or local or national governments </li>
+    <li>Charities or organisations with either very low or very high unrestricted reserves </li>
+    <li>Political or religious activities</li>
+    <li>Medical research </li>
+    <li>Projects or activities which the state has a legal duty to provide.</li>
+  </ul>
+</div>
+
+<div class="background"></div> !}

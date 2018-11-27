@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "DADI Foundation CMS",
+    "publisher": "DADI"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 3001
+  },
+  "apis": [
+    {
+      "name": "DADI Foundation API",
+      "host": "http://127.0.0.1",
+      "port": 8081,
+      "version": "1.0",
+      "database": "cloud"
+    }
+  ],
+  "auth": {
+    "enabled": false
+  },
+  "publicUrl": {
+    "host": "127.0.0.1",
+    "port": 3001,
+    "protocol": "http"
+  }
+}

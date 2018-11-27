@@ -1,0 +1,13 @@
+{
+  "page": {
+    "key": "index"
+  },
+  "datasources": [
+    "nav"
+  ],
+  "routes": [
+    {
+      "path": "/"
+    }
+  ]
+}

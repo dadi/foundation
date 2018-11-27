@@ -1,0 +1,8 @@
+{
+  "datasource": {
+    "key": "nav",
+    "source": {
+      "endpoint": "1.0/foundation/nav"
+    }
+  }
+}
