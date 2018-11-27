@@ -1,24 +1,28 @@
 {
-  "name": "dadi-foundation",
+  "name": "dadi-foundation-web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "author": "David Longworth <davidlongworth.com>",
-  "license": "ISC",
+  "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "watch 'npm run build' frontend/ -d -u",
     "build": "postcss --use postcss-import --use autoprefixer --autoprefixer.browsers '> 1%' frontend/main.css -o assets/main.css --replace --map && npm run mincss",
     "mincss": "cleancss -o assets/main.min.css frontend/main.css --source-map && npm run minjs",
     "minjs": "uglifyjs frontend/main.js -o assets/main.min.js"
   },
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "clean-css-cli": "^4.1.9",
-    "postcss-cli": "^4.1.1",
-    "postcss-import": "^10.0.0",
-    "watch": "^1.0.2"
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "uglify-js": "^3.3.9"
+    "@dadi/web": "^6.1.0",
+    "@dadi/web-dustjs": "^1.1.3",
+    "html-minifier": "^3.5.21"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "clean-css-cli": "^4.2.1",
+    "postcss-cli": "^6.0.1",
+    "postcss-import": "^12.0.1",
+    "uglify-js": "^3.4.9",
+    "watch": "^1.0.2"
   }
 }

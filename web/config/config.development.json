@@ -1,0 +1,31 @@
+{
+  "cluster": false,
+  "debug": true,
+  "allowDebugView": true,
+  "globalPostProcessors": [
+    "minify-html"
+  ],
+  "headers": {
+    "cacheControl": {
+      "text/html": "no-cache"
+    },
+    "useCompression": true
+  },
+  "security": {
+    "csrf": false
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 3003
+  },
+  "api": {
+    "main": {
+      "host": "127.0.0.1",
+      "port": 8081,
+      "auth": {
+        "clientId": "foundation-client",
+        "secret": "ajiktNFLxkHpuVjFXdmbxxjJQoPvafazXH22dCNQQ"
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "fields": {
+    "order": {
+      "type": "Number",
+      "required": true,
+      "label": "order",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "title": {
+      "type": "String",
+      "required": true,
+      "label": "Title",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "loc": {
+      "type": "String",
+      "required": true,
+      "label": "Location",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "external": {
+      "type": "Boolean",
+      "required": false,
+      "label": "Exteral link?",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Navigation",
+    "cache": false,
+    "count": 40,
+    "sort": "order",
+    "sortOrder": 1,
+    "storeRevisions": false,
+    "compose": true
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>DADI Foundation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="The DADI Foundation">
+
+  <meta name="description" content="The DADI Foundation aims to harness technologies to empower the most marginalised, ensuring fair access to technology and supporting robust and inclusive democracies.">
+
+  <meta property="og:description" content="The DADI Foundation aims to harness technologies to empower the most marginalised, ensuring fair access to technology and supporting robust and inclusive democracies.">
+
+  <meta property="og:url" content="https://dadi.foundation/">
+
+  <meta property="og:image" content="https://dadi.foundation/assets/og.jpg">
+
+  {^debug}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42395806-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-42395806-6');
+    </script>
+  {/debug}
+
+  <link rel="icon" href="/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="assets/main.min.css?v=2">
+</head>
+
+<header>
+  <h1><img src="assets/dadi-foundation.svg" alt="DADI Foundation" width="285"></h1>
+
+  <nav class="nav">
+    <ul>
+      {#nav.results}
+        <li><a href="{loc}" {?external}target="_blank"{/external}>{title}</a></li>
+      {/nav.results}
+    </ul>
+  </nav>
+</header>
