@@ -5,10 +5,14 @@
   "datasources": [
     "nav",
     "pages",
-    "content"
+    "content",
+    "static"
   ],
   "requiredDatasources": [
     "pages"
+  ],
+  "events": [
+    "static"
   ],
   "routes": [
     {

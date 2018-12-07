@@ -1,34 +1,40 @@
 {
   "fields": {
-    "name": {
+    "key": {
       "type": "String",
       "required": true,
-      "label": "Name",
+      "label": "Key",
       "publish": {
-        "placement": "main",
-        "display": {
-          "edit": true,
-          "list": true
-        }
-      }
-    },
-    "slug": {
-      "type": "String",
-      "label": "Url",
-      "publish": {
+        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
           "list": true
         }
       }
+    },
+    "value": {
+      "type": "String",
+      "required": true,
+      "label": "Value",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": true
+        },
+        "heightType": "content",
+        "rows": 3
+      }
     }
   },
   "settings": {
-    "displayName": "Pages",
+    "displayName": "Static",
     "cache": false,
     "count": 100,
-    "sort": "order",
+    "sort": "name",
     "sortOrder": 1,
     "storeRevisions": false,
     "compose": true

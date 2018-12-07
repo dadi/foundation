@@ -1,0 +1,8 @@
+{
+  "datasource": {
+    "key": "static",
+    "source": {
+      "endpoint": "1.0/foundation/static"
+    }
+  }
+}

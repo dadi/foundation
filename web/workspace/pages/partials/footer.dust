@@ -1,6 +1,17 @@
-<script src="/assets/main.min.js"></script>
+<footer class="cf">
+  <ul class="inline">
+    <li><a href="mailto:{static.email}">{static.email}</a></li>
+    <li><a href="https://twitter.com/{static.twitter}">Twitter</a></li>
+    <li><a href="https://instagram.com/{static.instagram}">Instagram</a></li>
+    <li><a href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a></li>
+  </ul>
 
+  <div class="about">
+    This site is built with our own technology and is <a href="https://github.com/dadi/foundation">open source</a>.
+  </div>
 </footer>
+
+<script src="/assets/main.min.js"></script>
 
 </body>
 </html>

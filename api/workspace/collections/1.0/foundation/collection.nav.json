@@ -52,7 +52,7 @@
   "settings": {
     "displayName": "Navigation",
     "cache": false,
-    "count": 40,
+    "count": 100,
     "sort": "order",
     "sortOrder": 1,
     "storeRevisions": false,

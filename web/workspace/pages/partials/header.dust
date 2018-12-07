@@ -13,9 +13,8 @@
 
   <meta property="og:title" content="The DADI Foundation">
 
-  <meta name="description" content="The DADI Foundation aims to harness technologies to empower the most marginalised, ensuring fair access to technology and supporting robust and inclusive democracies.">
-
-  <meta property="og:description" content="The DADI Foundation aims to harness technologies to empower the most marginalised, ensuring fair access to technology and supporting robust and inclusive democracies.">
+  <meta name="description" content="{static.meta_description}">
+  <meta property="og:description" content="{static.meta_description}">
 
   <meta property="og:url" content="https://dadi.foundation/">
 
@@ -38,7 +37,6 @@
   <link rel="stylesheet" type="text/css" href="/assets/main.min.css?v=2">
 </head>
 <body class="body--{@slugify}{pages.results[0].name}{/slugify}">
-
 
 <header>
   <h1>

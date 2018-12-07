@@ -15,17 +15,4 @@
   {/content.results}
 </main>
 
-<footer class="cf">
-  <ul class="inline">
-    <li><a href="mailto:info@dadi.foundation">info@dadi.foundation</a></li>
-    <li><a href="https://twitter.com/DadiFoundation">Twitter</a></li>
-    <li><a href="https://instagram.com/dadifoundation">Instagram</a></li>
-    <li><a href="https://www.linkedin.com/company/dadi-foundation">LinkedIn</a></li>
-  </ul>
-
-  <div class="about">
-    This site is built with our own technology and is <a href="https://github.com/dadi/foundation">open source</a>.
-  </div>
-</footer>
-
 {>"partials/footer" /}
