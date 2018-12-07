@@ -1,0 +1,36 @@
+{
+  "fields": {
+    "name": {
+      "type": "String",
+      "required": true,
+      "label": "Name",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "slug": {
+      "type": "String",
+      "label": "Url",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Pages",
+    "cache": false,
+    "count": 40,
+    "sort": "order",
+    "sortOrder": 1,
+    "storeRevisions": false,
+    "compose": true
+  }
+}

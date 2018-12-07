@@ -1,0 +1,19 @@
+{
+  "datasource": {
+    "key": "content",
+    "source": {
+      "endpoint": "1.0/foundation/content"
+    },
+    "paginate": false,
+    "chained": {
+      "datasource": "pages",
+      "outputParam": {
+        "field": "page",
+        "param": "results.0._id"
+      }
+    },
+    "sort": {
+      "order": 1
+    }
+  }
+}

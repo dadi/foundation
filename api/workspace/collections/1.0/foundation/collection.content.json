@@ -1,0 +1,64 @@
+{
+  "fields": {
+    "page": {
+      "type": "Reference",
+      "required": false,
+      "label": "Page",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      },
+      "settings": {
+        "collection": "pages"
+      }
+    },
+    "section": {
+      "type": "String",
+      "required": true,
+      "label": "Section",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "body": {
+      "type": "String",
+      "required": true,
+      "label": "Body",
+      "format": "markdown",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "order": {
+      "type": "Number",
+      "label": "Order",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Content",
+    "cache": false,
+    "count": 40,
+    "sort": "order",
+    "sortOrder": 1,
+    "storeRevisions": false,
+    "compose": true
+  }
+}

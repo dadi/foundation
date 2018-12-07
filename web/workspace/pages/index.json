@@ -3,11 +3,16 @@
     "key": "index"
   },
   "datasources": [
-    "nav"
+    "nav",
+    "pages",
+    "content"
+  ],
+  "requiredDatasources": [
+    "pages"
   ],
   "routes": [
     {
-      "path": "/"
+      "path": "/:page?"
     }
   ]
 }

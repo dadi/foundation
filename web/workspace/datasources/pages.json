@@ -1,0 +1,14 @@
+{
+  "datasource": {
+    "key": "pages",
+    "source": {
+      "endpoint": "1.0/foundation/pages"
+    },
+    "requestParams": [{
+      "param": "page",
+      "field": "slug"
+    }],
+    "count": 1,
+    "paginate": false
+  }
+}
