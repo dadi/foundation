@@ -7,12 +7,10 @@ module.exports = {
       autorestart: true,
       watch: true,
       env: {
-        'NODE_ENV': 'development',
-        'PWD': '.'
+        'NODE_ENV': 'development'
       },
       env_production : {
-        'NODE_ENV': 'production',
-        'PWD': '.'
+        'NODE_ENV': 'production'
       }
     },
     {
@@ -22,12 +20,10 @@ module.exports = {
       autorestart: true,
       watch: true,
       env: {
-        'NODE_ENV': 'development',
-        'PWD': '.'
+        'NODE_ENV': 'development'
       },
       env_production : {
-        'NODE_ENV': 'production',
-        'PWD': '.'
+        'NODE_ENV': 'production'
       }
     },
     {
