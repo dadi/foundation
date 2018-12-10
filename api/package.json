@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dadi/api": "^4.4.0",
+    "@dadi/api": "^4.4.3",
     "@dadi/api-mongodb": "^4.2.1"
   }
 }

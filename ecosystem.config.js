@@ -1,39 +1,48 @@
 module.exports = {
   apps : [
     {
-      name: "dadi-foundation-api",
-      script: "./api/server.js",
+      name: 'dadi-foundation-api',
+      cwd: './api',
+      script: 'server.js',
       autorestart: true,
       watch: true,
       env: {
-        "NODE_ENV": "development",
+        'NODE_ENV': 'development',
+        'PWD': '.'
       },
       env_production : {
-        "NODE_ENV": "production"
+        'NODE_ENV': 'production',
+        'PWD': '.'
       }
     },
     {
-      name: "dadi-foundation-web",
-      script: "./web/server.js",
+      name: 'dadi-foundation-web',
+      cwd: './web',
+      script: 'server.js',
       autorestart: true,
       watch: true,
       env: {
-        "NODE_ENV": "development",
+        'NODE_ENV': 'development',
+        'PWD': '.'
       },
       env_production : {
-        "NODE_ENV": "production"
+        'NODE_ENV': 'production',
+        'PWD': '.'
       }
     },
     {
-      name: "dadi-foundation-publish",
-      script: "./publish/server.js",
+      name: 'dadi-foundation-publish',
+      cwd: './publish',
+      script: 'server.js',
       autorestart: true,
       watch: true,
       env: {
-        "NODE_ENV": "development",
+        'NODE_ENV': 'development',
+        'PWD': '.'
       },
       env_production : {
-        "NODE_ENV": "production"
+        'NODE_ENV': 'production',
+        'PWD': '.'
       }
     }
   ]
