@@ -46,7 +46,6 @@
     margin: 0;
     text-align: right;
     position: absolute;
-    z-index: 10;
     width: 56%;
     right: 4.5rem;
     bottom: 3.3rem; 
@@ -115,9 +114,15 @@
 
 .section--our-plan .cnt__inner > ul {
   margin-top: 40px;
-  margin-bottom: 0px;
-  white-space:nowrap;
-  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .section--our-plan .cnt__inner > ul {
+    margin-bottom: 0px;
+    white-space: nowrap;
+    display: flex;
+  }
 }
 
 .section--our-plan .cnt__inner > ul li {
@@ -126,6 +131,7 @@
   margin: 0;
   padding: 0;
 }
+
 .section--our-plan .cnt__inner > ul a {
   border: 0;
   display: block;
@@ -203,12 +209,18 @@
   margin-top: 50px;
 }
 
-.section--get-involved .cnt {
-  background-image: url(/assets/logo-white.svg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 285px auto;
-  background-position: 4rem 4.5rem;
-  margin-top: 0;
-  padding-top: 4rem;
+.section--get-involved li {
+  word-break: break-all;
+}
+
+@media (min-width: 800px) {
+  .section--get-involved .cnt {
+    background-image: url(/assets/logo-white.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 285px auto;
+    background-position: 4rem 4.5rem;
+    margin-top: 0;
+    padding-top: 4rem;
+  }
 }

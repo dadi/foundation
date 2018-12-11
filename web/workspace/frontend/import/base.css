@@ -166,6 +166,7 @@ header h1 img {
 
 main {
   background: #f9f8f6;
+  overflow: hidden;
 }
 main p,
 footer p,

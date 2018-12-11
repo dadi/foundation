@@ -4,7 +4,7 @@ footer {
   color: #f9f8f6;
   position: relative;
   z-index: 1;
-  padding: 5rem 4rem 10rem;
+  padding: 3rem 5% 10rem;
 }
 
 footer ul {
@@ -31,15 +31,22 @@ footer .nav a {
 }
 
 
+@media (max-width: 800px) {
+  footer .about {
+    margin-top: 30px;
+  }
+}
+
 @media (min-width: 800px) {
   footer {
     background-position: 50% 5rem;
+    padding: 5rem 4rem 10rem;
   }
   footer .inline {
     float: right;
   }
 }
-@media only screen and (min-width: 840px) {
+@media (min-width: 840px) {
   footer .inline li {
     display: inline-block;
     padding-right: 10px;

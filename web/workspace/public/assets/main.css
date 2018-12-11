@@ -251,6 +251,7 @@ header h1 img {
 }
 main {
   background: #f9f8f6;
+  overflow: hidden;
 }
 main p,
 footer p,
@@ -336,7 +337,7 @@ footer {
   color: #f9f8f6;
   position: relative;
   z-index: 1;
-  padding: 5rem 4rem 10rem;
+  padding: 3rem 5% 10rem;
 }
 footer ul {
   list-style: none;
@@ -359,15 +360,21 @@ footer .nav {
 footer .nav a {
   color: #fff;
 }
+@media (max-width: 800px) {
+  footer .about {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 800px) {
   footer {
     background-position: 50% 5rem;
+    padding: 5rem 4rem 10rem;
   }
   footer .inline {
     float: right;
   }
 }
-@media only screen and (min-width: 840px) {
+@media (min-width: 840px) {
   footer .inline li {
     display: inline-block;
     padding-right: 10px;
@@ -428,7 +435,6 @@ footer .nav a {
     margin: 0;
     text-align: right;
     position: absolute;
-    z-index: 10;
     width: 56%;
     right: 4.5rem;
     bottom: 3.3rem; 
@@ -491,9 +497,14 @@ footer .nav a {
 /* Homepage: our plan */
 .section--our-plan .cnt__inner > ul {
   margin-top: 40px;
-  margin-bottom: 0px;
-  white-space:nowrap;
-  display: flex;
+  margin-bottom: 40px;
+}
+@media (min-width: 800px) {
+  .section--our-plan .cnt__inner > ul {
+    margin-bottom: 0px;
+    white-space: nowrap;
+    display: flex;
+  }
 }
 .section--our-plan .cnt__inner > ul li {
   list-style: none;
@@ -570,13 +581,18 @@ footer .nav a {
 .section--get-involved h3 {
   margin-top: 50px;
 }
-.section--get-involved .cnt {
-  background-image: url(/assets/logo-white.svg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 285px auto;
-  background-position: 4rem 4.5rem;
-  margin-top: 0;
-  padding-top: 4rem;
+.section--get-involved li {
+  word-break: break-all;
+}
+@media (min-width: 800px) {
+  .section--get-involved .cnt {
+    background-image: url(/assets/logo-white.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 285px auto;
+    background-position: 4rem 4.5rem;
+    margin-top: 0;
+    padding-top: 4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
