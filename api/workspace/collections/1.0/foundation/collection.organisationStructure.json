@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "title": {
+      "type": "String",
+      "required": true,
+      "label": "Title",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Organisation Structure",
+    "cache": false,
+    "count": 100,
+    "sort": "title",
+    "sortOrder": 1,
+    "storeRevisions": false,
+    "compose": true
+  }
+}

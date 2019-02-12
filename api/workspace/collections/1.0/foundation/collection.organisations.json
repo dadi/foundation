@@ -1,0 +1,210 @@
+{
+  "fields": {
+    "title": {
+      "type": "String",
+      "required": true,
+      "label": "Title",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "structure": {
+      "type": "Reference",
+      "settings": {
+        "collection": "organisationStructure"
+      },
+      "required": false,
+      "label": "Structure",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "focus": {
+      "type": "Reference",
+      "settings": {
+        "collection": "organisationFocus"
+      },
+      "required": false,
+      "label": "Focus",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "basedIn": {
+      "type": "String",
+      "required": false,
+      "label": "Location (based in)",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "actingIn": {
+      "type": "String",
+      "required": false,
+      "label": "Location (acting in)",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "organisationType": {
+      "type": "Reference",
+      "settings": {
+        "collection": "organisationType",
+        "multiple": true
+      },
+      "required": false,
+      "label": "Organisation Type",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "democracyFocus": {
+      "type": "Reference",
+      "settings": {
+        "collection": "democracyFocus",
+        "multiple": true
+      },
+      "required": false,
+      "label": "Democracy Focus",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "techFocus": {
+      "type": "Reference",
+      "settings": {
+        "collection": "techFocus",
+        "multiple": true
+      },
+      "required": false,
+      "label": "Tech Focus",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "url": {
+      "type": "String",
+      "required": false,
+      "label": "URL",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false,
+          "link": true
+        }
+      }
+    },
+    "contact": {
+      "type": "String",
+      "required": false,
+      "label": "Contact",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "about": {
+      "type": "String",
+      "required": false,
+      "label": "About",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        },
+        "heightType": "content",
+        "rows": 3
+      }
+    },
+    "activities": {
+      "type": "String",
+      "required": false,
+      "label": "Activities",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        },
+        "heightType": "content",
+        "rows": 3
+      }
+    },
+    "notes": {
+      "type": "String",
+      "required": false,
+      "label": "Notes",
+      "publish": {
+        "section": "Details",
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        },
+        "heightType": "content",
+        "rows": 3
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Organisations",
+    "cache": false,
+    "count": 100,
+    "sort": "title",
+    "sortOrder": 1,
+    "storeRevisions": false,
+    "compose": true
+  }
+}
