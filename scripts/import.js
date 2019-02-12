@@ -6,9 +6,9 @@ let env = process.env.NODE_ENV
 let webConfig = require(`../web/config/config.${env}.json`)
 
 let references = {
-  orgStructure: [],
-  orgFocus: [],
   democracyFocus: [],
+  organisationFocus: [],
+  organisationStructure: [],
   organisationType: [],
   techFocus: []
 }
@@ -45,15 +45,15 @@ fs.readFile('./data.csv', (_err, body) => {
 
         if (key === 'structure') {
           title = record[key].trim()
-          if (!references.orgStructure.find(item => item.title === title)) {
-            references.orgStructure.push({ title: title })
+          if (!references.organisationStructure.find(item => item.title === title)) {
+            references.organisationStructure.push({ title: title })
           }
         }
 
         if (key === 'focus') {
           title = record[key].trim()
-          if (!references.orgFocus.find(item => item.title === title)) {
-            references.orgFocus.push({ title: title })
+          if (!references.organisationFocus.find(item => item.title === title)) {
+            references.organisationFocus.push({ title: title })
           }
         }
       })
@@ -62,8 +62,8 @@ fs.readFile('./data.csv', (_err, body) => {
     apiInsert('organisationType', references.organisationType).then(() => {
       apiInsert('democracyFocus', references.democracyFocus).then(() => {
         apiInsert('techFocus', references.techFocus).then(() => {
-          apiInsert('orgStructure', references.orgStructure).then(() => {
-            apiInsert('orgFocus', references.orgFocus).then(() => {
+          apiInsert('organisationStructure', references.organisationStructure).then(() => {
+            apiInsert('organisationFocus', references.organisationFocus).then(() => {
               console.log('DONE INSERTING REFERENCES')
 
               records.forEach(record => {
@@ -103,12 +103,12 @@ fs.readFile('./data.csv', (_err, body) => {
                   }
 
                   if (key === 'structure') {
-                    let ref = references.orgStructure.find(item => item.title === record[key].trim())
+                    let ref = references.organisationStructure.find(item => item.title === record[key].trim())
                     record.structure = ref.id
                   }
 
                   if (key === 'focus') {
-                    let ref = references.orgFocus.find(item => item.title === record[key].trim())
+                    let ref = references.organisationFocus.find(item => item.title === record[key].trim())
                     record.focus = ref.id
                   }
                 })

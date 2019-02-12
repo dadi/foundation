@@ -16,7 +16,7 @@
     "structure": {
       "type": "Reference",
       "settings": {
-        "collection": "orgStructure"
+        "collection": "organisationStructure"
       },
       "required": false,
       "label": "Structure",
@@ -32,7 +32,7 @@
     "focus": {
       "type": "Reference",
       "settings": {
-        "collection": "orgFocus"
+        "collection": "organisationFocus"
       },
       "required": false,
       "label": "Focus",

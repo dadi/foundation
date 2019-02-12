@@ -18,8 +18,8 @@
           "title": "Taxonomy",
           "collections": [
             "democracyFocus",
-            "orgFocus",
-            "orgStructure",
+            "organisationFocus",
+            "organisationStructure",
             "organisationType",
             "techFocus"
           ]
