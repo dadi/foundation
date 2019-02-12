@@ -1,9 +1,17 @@
 <footer class="cf">
   <ul class="inline">
-    <li><a href="mailto:{static.email}">{static.email}</a></li>
-    <li><a href="https://twitter.com/{static.twitter}">Twitter</a></li>
-    <li><a href="https://instagram.com/{static.instagram}">Instagram</a></li>
-    <li><a href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a></li>
+    {?static.email}
+    	<li><a href="mailto:{static.email}">{static.email}</a></li>
+    {/static.email}
+    {?static.twitter}
+    	<li><a href="https://twitter.com/{static.twitter}">Twitter</a></li>
+    {/static.twitter}
+   	{?static.instagram}
+    	<li><a href="https://instagram.com/{static.instagram}">Instagram</a></li>
+    {/static.instagram}
+    {?static.linkedin}
+    	<li><a href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a></li>
+    {/static.linkedin}
   </ul>
 
   <div class="about">
