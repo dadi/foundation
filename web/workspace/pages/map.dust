@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Display a map</title>
+<title>Organisations</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
@@ -21,36 +21,36 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFkaWNvIiwiYSI6IlVaOVU3QmMifQ.dDoTL04V_WtMo2
 var data = {organisations.results|js|s};
 
 var map = new mapboxgl.Map({
-	container: 'map',
-	style: 'mapbox://styles/dadico/cjrrouhxv2jx12so5co2b85vj',
-	center: [0, 0],
-	zoom: 1.4
+  container: 'map',
+  style: 'mapbox://styles/dadico/cjrrouhxv2jx12so5co2b85vj',
+  center: [0, 0],
+  zoom: 1.4
 });
 
 var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
 
-for (var i = 0; i < data.length; i++) {	
-	plotOrg(data[i], map);
+for (var i = 0; i < data.length; i++) { 
+  plotOrg(data[i], map);
 }
 
 function plotOrg(org, map) {
-	mapboxClient
-		.geocoding.forwardGeocode({
-			query: org.basedIn,
-			autocomplete: false,
-			limit: 1
-		})
-		.send()
-		.then(function(response) {
-			var feature = response.body.features[0];
+  mapboxClient
+    .geocoding.forwardGeocode({
+      query: org.basedIn,
+      autocomplete: false,
+      limit: 1
+    })
+    .send()
+    .then(function(response) {
+      var feature = response.body.features[0];
 
-			var popup = new mapboxgl.Popup({ offset: 25 }).setText(org.title);
-				 
-			new mapboxgl.Marker()
-				.setLngLat(feature.center)
-				.setPopup(popup)
-				.addTo(map);
-		});
+      var popup = new mapboxgl.Popup({ offset: 25 }).setText(org.title);
+         
+      new mapboxgl.Marker()
+        .setLngLat(feature.center)
+        .setPopup(popup)
+        .addTo(map);
+    });
 }
 </script>
  
