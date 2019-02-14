@@ -1,0 +1,15 @@
+{
+  "page": {
+    "key": "map"
+  },
+  "datasources": [
+    "organisations"
+  ],
+  "events": [
+  ],
+  "routes": [
+    {
+      "path": "/map"
+    }
+  ]
+}
