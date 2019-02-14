@@ -3,6 +3,7 @@
     "key": "organisations",
     "source": {
       "endpoint": "1.0/foundation/organisations?compose=1"
-    }
+    },
+    "count": 1000
   }
 }
