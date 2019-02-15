@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@dadi/api": "^4.4.3",
-    "@dadi/api-mongodb": "^4.2.1"
+    "@dadi/api-mongodb": "^4.2.1",
+    "slugify": "^1.3.4"
   }
 }
