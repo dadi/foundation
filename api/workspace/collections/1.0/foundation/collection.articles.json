@@ -8,7 +8,6 @@
       "required": false,
       "label": "Lead image",
       "publish": {
-        "section": "Details",
         "placement": "sidebar",
         "subType": "Image",
         "display": {
@@ -22,7 +21,6 @@
       "required": false,
       "label": "Category",
       "publish": {
-        "section": "Details",
         "placement": "main",
         "display": {
           "edit": true,
@@ -38,7 +36,6 @@
       "required": true,
       "label": "Title",
       "publish": {
-        "section": "Details",
         "placement": "main",
         "display": {
           "edit": true,
@@ -51,7 +48,6 @@
       "required": false,
       "label": "Slug",
       "publish": {
-        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
@@ -79,7 +75,6 @@
       "required": false,
       "label": "Published",
       "publish": {
-        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
@@ -93,7 +88,6 @@
       "required": false,
       "label": "Published at",
       "publish": {
-        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
@@ -107,7 +101,6 @@
       "required": false,
       "label": "Updated at",
       "publish": {
-        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
@@ -120,7 +113,6 @@
       "required": false,
       "label": "Excerpt",
       "publish": {
-        "section": "Details",
         "placement": "main",
         "multiline": true,
         "display": {
@@ -136,7 +128,6 @@
       "label": "Body",
       "format": "markdown",
       "publish": {
-        "section": "Details",
         "placement": "main",
         "multiline": true,
         "display": {
