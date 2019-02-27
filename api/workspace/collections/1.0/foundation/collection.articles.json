@@ -1,0 +1,184 @@
+{
+  "fields": {
+    "leadImage": {
+      "type": "Reference",
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "required": false,
+      "label": "Lead image",
+      "publish": {
+        "placement": "sidebar",
+        "subType": "Image",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "category": {
+      "type": "Reference",
+      "required": false,
+      "label": "Category",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "categories"
+      }
+    },
+    "title": {
+      "type": "String",
+      "required": true,
+      "label": "Title",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "slug": {
+      "type": "String",
+      "required": false,
+      "label": "Slug",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "author": {
+      "type": "Reference",
+      "required": false,
+      "label": "Author",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      },
+      "settings": {
+        "collection": "authors"
+      }
+    },
+    "published": {
+      "type": "Boolean",
+      "required": false,
+      "label": "Published",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "publishedAt": {
+      "type": "DateTime",
+      "format": "unix",
+      "required": false,
+      "label": "Published at",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "updatedAt": {
+      "type": "DateTime",
+      "format": "unix",
+      "required": false,
+      "label": "Updated at",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "excerpt": {
+      "type": "String",
+      "required": false,
+      "label": "Excerpt",
+      "publish": {
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": true
+        },
+        "heightType": "content"
+      }
+    },
+    "body": {
+      "type": "String",
+      "required": true,
+      "label": "Body",
+      "format": "markdown",
+      "publish": {
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        },
+        "heightType": "content",
+        "resizable": true
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Articles",
+    "cache": false,
+    "count": 40,
+    "storeRevisions": false,
+    "description": "",
+    "compose": true,
+    "sort": "publishedAt",
+    "sortOrder": -1,
+    "index": [
+      {
+        "keys": {
+          "publishedAt": 1
+        }
+      },
+      {
+        "keys": {
+          "publishedAt": -1
+        }
+      }
+    ],
+    "hooks": {
+      "beforeCreate": [
+        {
+          "hook": "slugify",
+          "options": {
+            "from": "title",
+            "to": "slug"
+          }
+        }
+      ],
+      "beforeUpdate": [
+        {
+          "hook": "slugify",
+          "options": {
+            "from": "title",
+            "to": "slug"
+          }
+        }
+      ]
+    }
+  }
+}

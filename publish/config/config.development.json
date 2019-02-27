@@ -15,22 +15,31 @@
       "database": "cloud",
       "menu": [
         {
-          "title": "Taxonomy",
-          "collections": [
-            "democracyFocus",
-            "organisationFocus",
-            "organisationStructure",
-            "organisationType",
-            "techFocus"
+          "title": "Content",
+          "collections":[
+            "articles",
+            "categories",
+            "authors"
           ]
         },
         {
-          "title": "Content",
+          "title": "Structure",
           "collections":[
             "content",
             "nav",
             "pages",
             "static"
+          ]
+        },
+        {
+          "title": "Directory",
+          "collections": [
+            "organisations",
+            "democracyFocus",
+            "organisationFocus",
+            "organisationStructure",
+            "organisationType",
+            "techFocus"
           ]
         }
       ]
