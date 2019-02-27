@@ -15,7 +15,6 @@
     },
     "desc": {
       "type": "String",
-      "required": true,
       "label": "Description",
       "publish": {
         "section": "Details",
