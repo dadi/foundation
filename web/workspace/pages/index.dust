@@ -1,18 +1,69 @@
 {>"partials/header" /}
 
-<main>
-  {#content.results}
-    <section class="cf section section--{@slugify}{section}{/slugify}">
-      <a name="{@slugify}{section}{/slugify}" id="{@slugify}{section}{/slugify}"></a>
+<main class="cnt">
+  <section class="intro grid">
+    <div class="col col--right w-1-2">
+      <h2>We will work with the tech industry and human rights sector to tackle the root causes of injustice, equipping future technologists and activists with the skills to build and participate in robust and inclusive democracies.</h2>
+    </div>
+  </section>
 
-      <div class="cnt">
-        <h2 class="sub">{section}</h2>
-        <div class="cnt__inner">
-          {@markdown}{body|s}{/markdown}
-        </div>
+  <section class="latest">
+    <h2>Latest News</h2>
+
+    <div class="grid">
+      <article class="col w-1-4">
+        <h3>SpeakUp</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="latest__category">Interview</p>
+      </article>
+      <article class="col w-1-4">
+        <h3>SpeakUp</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="latest__category">Interview</p>
+      </article>
+      <article class="col w-1-4">
+        <h3>SpeakUp</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="latest__category">Interview</p>
+      </article>
+      <article class="col w-1-4">
+        <h3>SpeakUp</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="latest__category">Interview</p>
+      </article>
+    </div>
+
+    <p class="tac"><a class="btn" href="/resources">See more</a></p>
+  </section>
+
+  <section class="approach">
+    <h2>Our approach</h2>
+
+    <div class="grid">
+      <div class="col col--right col w-1-2">
+        <p>Technology poses a huge threat to basic rights: it has eviscerated privacy, amplified prejudice and undermined democracy. There is growing evidence of the need to reframe technology’s role in a world with an increasingly unequal distribution of wealth and power.</p>
+
+        <p>The Founders believe that technology can and should act as a catalyst for greater equality, helping to address the root causes of injustice.</p>
+
+        <p>We aim to ensure that technology is:</p>
       </div>
-    </section>
-  {/content.results}
+    </div>
+
+    <div class="grid">
+      <div class="col w-1-3">
+        <img src="/newassets/icon-advancing-human-rights.svg"/>
+        <p><strong>Embedded</strong> as a key tool for advancing human rights across the globe</p>
+      </div>
+      <div class="col w-1-3">
+        <img src="/newassets/icon-promote-peoples-basic-rights.svg"/>
+        <p><strong>Accessible</strong> wherever it is needed to promote people’s basic rights</p>
+      </div>
+      <div class="col w-1-3">
+        <img src="/newassets/icon-protection-of-human-rights.svg"/>
+        <p><strong>Developed</strong> with the protection of human rights as a core principle</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 {>"partials/footer" /}

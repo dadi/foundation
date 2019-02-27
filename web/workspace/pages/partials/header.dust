@@ -38,18 +38,21 @@
 </head>
 <body class="body--{@slugify}{pages.results[0].name}{/slugify}">
 
-<header>
-  <h1>
-    <a href="/">
-      <img src="/assets/dadi-foundation.svg" alt="DADI Foundation" width="285">
-    </a>
-  </h1>
+<header class="header cnt fm">
+  <div class="grid">
+    <h1 class="col w-1-2">
+      <a href="/">
+        <img src="/assets/mark.svg" alt="DADI Foundation logo" width="285">
+        DADI Foundation
+      </a>
+    </h1>
 
-  <nav class="nav">
-    <ul>
-      {#nav.results}
-        <li><a href="{loc}" {?external}target="_blank"{/external}>{title}</a></li>
-      {/nav.results}
-    </ul>
-  </nav>
+    <nav class="col w-1-2 nav">
+      <ul>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

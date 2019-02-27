@@ -1,0 +1,13 @@
+{
+  "page": {
+    "key": "research"
+  },
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/research"
+    }
+  ]
+}

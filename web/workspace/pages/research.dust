@@ -1,0 +1,11 @@
+{>"partials/header" /}
+
+<main class="cnt">
+  <section class="grid">
+    <div class="col col--right w-1-2">
+      <h2>Hello world</h2>
+    </div>
+  </section>
+</main>
+
+{>"partials/footer" /}

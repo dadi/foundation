@@ -1,0 +1,13 @@
+{
+  "page": {
+    "key": "about"
+  },
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/about"
+    }
+  ]
+}

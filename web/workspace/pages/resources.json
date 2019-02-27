@@ -1,0 +1,13 @@
+{
+  "page": {
+    "key": "resources"
+  },
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/resources"
+    }
+  ]
+}
