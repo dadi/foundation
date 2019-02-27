@@ -15,10 +15,11 @@
       "database": "cloud",
       "menu": [
         {
-          "title": "Blog",
+          "title": "Content",
           "collections":[
             "articles",
-            "categories"
+            "categories",
+            "authors"
           ]
         },
         {
