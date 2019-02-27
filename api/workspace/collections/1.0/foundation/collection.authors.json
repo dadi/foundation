@@ -1,0 +1,145 @@
+{
+  "fields": {
+    "image": {
+      "type": "Reference",
+      "settings": {
+        "collection": "mediaStore"
+      },
+      "required": false,
+      "label": "Profile picture",
+      "publish": {
+        "placement": "sidebar",
+        "subType": "Media",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    },
+    "name": {
+      "type": "String",
+      "required": true,
+      "label": "Name",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "slug": {
+      "type": "String",
+      "required": false,
+      "label": "Slug",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": false,
+          "list": false
+        }
+      }
+    },
+    "role": {
+      "type": "String",
+      "required": false,
+      "label": "Role",
+      "publish": {
+        "placement": "main",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
+    "bio": {
+      "type": "String",
+      "required": true,
+      "label": "Bio",
+      "publish": {
+        "placement": "main",
+        "multiline": true,
+        "display": {
+          "edit": true,
+          "list": false
+        },
+        "heightType": "content"
+      }
+    },
+    "twitter": {
+      "type": "String",
+      "required": false,
+      "label": "Twitter",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true,
+          "link": "https://twitter.com/{value}"
+        }
+      }
+    },
+    "personalSite": {
+      "type": "String",
+      "required": false,
+      "label": "Personal site",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true,
+          "link": true
+        }
+      }
+    },
+    "order": {
+      "type": "Number",
+      "required": false,
+      "label": "Order",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
+        }
+      }
+    }
+  },
+  "settings": {
+    "displayName": "Authors",
+    "cache": false,
+    "count": 40,
+    "compose": true,
+    "sort": "order",
+    "sortOrder": 1,
+    "index": [
+      {
+        "keys": {
+          "order": 1
+        }
+      }
+    ],
+    "storeRevisions": false,
+    "description": "",
+    "hooks": {
+      "beforeCreate": [
+        {
+          "hook": "slugify",
+          "options": {
+            "from": "name",
+            "to": "slug"
+          }
+        }
+      ],
+      "beforeUpdate": [
+        {
+          "hook": "slugify",
+          "options": {
+            "from": "name",
+            "to": "slug"
+          }
+        }
+      ]
+    }
+  }
+}

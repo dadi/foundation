@@ -60,16 +60,18 @@
       }
     },
     "author": {
-      "type": "String",
+      "type": "Reference",
       "required": false,
       "label": "Author",
       "publish": {
-        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
           "list": false
         }
+      },
+      "settings": {
+        "collection": "authors"
       }
     },
     "published": {
