@@ -12,6 +12,7 @@
 .grid {
   margin-left: -20px;
   margin-right: -20px;
+  display: block;
 }
 .grid .col {
   margin-left: 0;
@@ -314,6 +315,19 @@ header a {
 }
 .latest__category {
   color: var(--color-tint);
+}
+.latest--list .latest__header {
+  color: inherit;
+  padding-top: 0;
+  border: 0;
+}
+.latest--list .latest__article {
+  border-top: 1px solid var(--color-text);
+  padding-top: 20px;
+  margin-top: 2px;
+}
+.latest--list .latest__article:hover h3 {
+  text-decoration: underline;
 }
 .approach {
   border-top: 1px solid var(--color-tint-light);

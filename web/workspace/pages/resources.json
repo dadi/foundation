@@ -2,6 +2,9 @@
   "page": {
     "key": "resources"
   },
+  "datasources": [
+    "articles-all"
+  ],
   "events": [
     "static"
   ],
