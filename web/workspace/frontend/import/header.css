@@ -1,7 +1,6 @@
 .header {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #04111d;
 }
 .header,
 .header h1 {
@@ -17,6 +16,21 @@
   vertical-align: middle;
   margin-top: -5px;
   margin-right: 10px;
+}
+
+.header__search {
+  float: right;
+}
+.header__search input {
+  background-image: url(/newassets/icon-search.svg);
+  background-repeat: no-repeat;
+  background-size: auto 19px;
+  background-position: 100% 50%;
+  text-align: right;
+  margin-top: -13px;
+  border: 0;
+  font-size: 0.9rem;
+  padding-right: 25px;
 }
 
 header a {

@@ -15,12 +15,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-weight: 200;
   background: #f9f8f6;
-  color: #595a5a;
+  color: #04111d;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-size: cover;
   font-size: 1.15rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4 {
   font-weight: normal;
@@ -30,7 +31,11 @@ h1, h2, h3, h4 {
   font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
 
-h2 {
+.large {
+  font-size: 1.7rem;
+}
+
+/*h2 {
   font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-top: 1px solid #d8d7d6;
   font-size: 1rem;
@@ -44,6 +49,15 @@ h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5em;
   font-weight: normal;
+}*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-bottom: 1.1em;
 }
 
 .mt {
@@ -61,13 +75,15 @@ h3 {
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 80px;
+  width: 80%;
 }
 
 @media (min-width: 800px) {
   .cnt {
     margin-top: 4rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 10rem;
+    max-width: 1200px;
   }
 }

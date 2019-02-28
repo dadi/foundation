@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>DADI Foundation</title>
+  <title>{+title/} | DADI Foundation</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i|Roboto+Mono" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 
   <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 
-  <meta property="og:title" content="The DADI Foundation">
+  <meta property="og:title" content="{+title/} | The DADI Foundation">
 
   <meta name="description" content="{static.meta_description}">
   <meta property="og:description" content="{static.meta_description}">
@@ -36,7 +36,7 @@
 
   <link rel="stylesheet" type="text/css" href="/assets/main.min.css?v=2">
 </head>
-<body class="body--{@slugify}{pages.results[0].name}{/slugify}">
+<body class="body--{page.key}">
 
 <header class="header cnt fm">
   <div class="grid">
@@ -48,6 +48,11 @@
     </h1>
 
     <nav class="col w-1-2 nav">
+      <form action="/search" class="header__search">
+        <input type="hidden" name="_csrf" value="{csrf}">
+        <input class="search" id="search" type="search" name="query" value="">
+      </form>
+
       <ul>
         <li><a href="/research">Research</a></li>
         <li><a href="/resources">Resources</a></li>

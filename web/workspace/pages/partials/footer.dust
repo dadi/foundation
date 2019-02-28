@@ -1,32 +1,36 @@
-<footer>
+<footer class="footer">
   <div class="cnt">
-    <div class="grid">
-      <div class="col w-1-2">
-        <p>Support us</p>
+    <div class="section">
+      <div class="grid">
+        <div class="col w-1-2">
+          <h2 class="section__header fm">Support us</h2>
+        </div>
+        <div class="col w-1-2 footer__aside">
+          <a class="btn" href="/donate">Donate</a>
+          <a class="btn" href="/volunteer">Volunteer</a>
+        </div>
       </div>
-      <div class="col w-1-2">
-        <a class="btn" href="/donate">Donate</a>
-        <a class="btn" href="/volunteer">Volunteer</a>
-      </div>
-    </div>
 
-    <div class="grid">
-      <div class="col w-1-2">
-        <p>This site is built with our own technology and is <a href="https://github.com/dadi/foundation">open source</a>.</p>
-      </div>
-      <div class="col w-1-2">
-        {?static.email}
-          <a href="mailto:{static.email}">{static.email}</a>
-        {/static.email}
-        {?static.twitter}
-          <a href="https://twitter.com/{static.twitter}">Twitter</a>
-        {/static.twitter}
-        {?static.instagram}
-          <a href="https://instagram.com/{static.instagram}">Instagram</a>
-        {/static.instagram}
-        {?static.linkedin}
-          <a href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a>
-        {/static.linkedin}
+      <div class="grid footer__meta fm">
+        <div class="col w-1-2">
+          <p>This site is built with our own technology and is <a href="https://github.com/dadi/foundation">open source</a></p>
+        </div>
+        <div class="col w-1-2 footer__aside">
+          <p>
+          {?static.email}
+            <a href="mailto:{static.email}">{static.email}</a>
+          {/static.email}
+          {?static.twitter}
+            <a href="https://twitter.com/{static.twitter}">Twitter</a>
+          {/static.twitter}
+          {?static.instagram}
+            <a href="https://instagram.com/{static.instagram}">Instagram</a>
+          {/static.instagram}
+          {?static.linkedin}
+            <a href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a>
+          {/static.linkedin}
+          </p>
+        </div>
       </div>
     </div>
   </div>

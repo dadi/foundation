@@ -1,9 +1,15 @@
 {>"partials/header" /}
 
+{<title}Resources{/title}
+
 <main class="cnt">
-  <section class="grid">
+  <section class="grid section section--lead">
+    <div class="col w-1-2">
+      <h2 class="section__header fm">Resources</h2>
+    </div>
     <div class="col col--right w-1-2">
-      <h2>Hello world</h2>
+      <p class="large">Tech can bring reach and depth to citizen participation but to be meaningful and legitimate it must engage diverse groups from across society by fostering digital inclusion.</p>
+      <p class="large">Below is a series of case studies and interviews from groups using tech to improve democracy, with a focus on those working to increase the access of marginalised groups to democratic spaces. </p>
     </div>
   </section>
 </main>

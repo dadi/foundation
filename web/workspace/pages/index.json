@@ -3,20 +3,15 @@
     "key": "index"
   },
   "datasources": [
-    "nav",
-    "pages",
-    "content",
-    "static"
-  ],
-  "requiredDatasources": [
-    "pages"
+    "static",
+    "articles-homepage"
   ],
   "events": [
     "static"
   ],
   "routes": [
     {
-      "path": "/:page?"
+      "path": "/"
     }
   ]
 }
