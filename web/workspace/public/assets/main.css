@@ -300,9 +300,6 @@ header a {
   background-position: 100% 50%;
   background-size: auto 12px;
 }
-.footer__meta a:hover {
-  color: var(--color-accent);
-}
 .section {
   margin-bottom: 4em;
 }
@@ -370,6 +367,9 @@ header a {
 .approach {
   border-top: 1px solid var(--color-tint-light);
   padding-top: 30px;
+}
+.approach h2 {
+  margin-bottom: .6em;
 }
 .approach__highlights {
   text-align: center;

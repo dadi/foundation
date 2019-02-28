@@ -19,6 +19,3 @@
   background-position: 100% 50%;
   background-size: auto 12px;
 }
-.footer__meta a:hover {
-  color: var(--color-accent);
-}

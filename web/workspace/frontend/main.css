@@ -80,6 +80,9 @@
   border-top: 1px solid var(--color-tint-light);
   padding-top: 30px;
 }
+.approach h2 {
+  margin-bottom: .6em;
+}
 .approach__highlights {
   text-align: center;
   margin-top: 60px;
