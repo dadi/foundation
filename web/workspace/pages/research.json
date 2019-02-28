@@ -2,6 +2,9 @@
   "page": {
     "key": "research"
   },
+  "datasources": [
+    "static"
+  ],
   "events": [
     "static"
   ],

@@ -3,7 +3,7 @@
 {<title}Research{/title}
 
 <main class="cnt">
-  <section class="grid section section--lead map">
+  <section class="grid section section--lead cta-map">
     <div class="col w-1-2">
       <h2>Research</h2>
     </div>
@@ -11,7 +11,7 @@
       <p class="large">Tech can bring reach and depth to citizen participation but to be meaningful and legitimate it must engage diverse groups from across society by fostering digital inclusion.</p>
       <p class="large">Below is a map featuring case studies and interviews from groups using tech to improve democracy, with a focus on those working to increase the access of marginalised groups to democratic spaces.</p>
 
-      <p class="section__more"><a class="btn" href="/resources">Open organisation map</a></p>
+      <p class="section__more"><a class="btn" href="/resources/organisations">Open organisation map</a></p>
     </div>
   </section>
 </main>

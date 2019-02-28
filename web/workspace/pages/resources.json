@@ -3,7 +3,8 @@
     "key": "resources"
   },
   "datasources": [
-    "articles-all"
+    "articles-all",
+    "static"
   ],
   "events": [
     "static"
