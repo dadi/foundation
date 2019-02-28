@@ -1,0 +1,24 @@
+.footer .section {
+  border-top: 1px solid var(--color-tint-light);
+  padding-top: 30px;
+}
+.footer__aside {
+  text-align: right;
+}
+.footer__meta {
+  margin-top: 120px;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+.footer__meta a {
+  text-decoration: underline;
+  padding-right: 16px;
+  margin-right: 8px;
+  background-image: url(/newassets/icon-arrow-tr.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: auto 12px;
+}
+.footer__meta a:hover {
+  color: var(--color-accent);
+}

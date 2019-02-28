@@ -35,22 +35,6 @@ h1, h2, h3, h4 {
   font-size: 1.7rem;
 }
 
-/*h2 {
-  font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-top: 1px solid #d8d7d6;
-  font-size: 1rem;
-  padding: 20px 0;
-  margin-bottom: 2em;
-  color: #04111d;
-}
-h3 {
-  font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f44b00;
-  font-size: 1.4rem;
-  margin-bottom: 0.5em;
-  font-weight: normal;
-}*/
-
 a {
   text-decoration: none;
   color: inherit;
@@ -86,4 +70,27 @@ p {
     margin-bottom: 10rem;
     max-width: 1200px;
   }
+}
+
+
+.btn {
+  background: var(--color-accent);
+  color: var(--color-accent-invert);
+  padding: 12px 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+  font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
+  font-size: 0.95rem;
+}
+.btn:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,0.05);
+  content: '';
+  display: none;
+}
+.btn:hover:before {
+  display: block;
 }

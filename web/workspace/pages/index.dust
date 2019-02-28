@@ -1,5 +1,7 @@
 {>"partials/header" /}
 
+{<title}Welcome{/title}
+
 <main class="cnt">
   <section class="section section--lead intro">
     <div class="grid">
@@ -24,7 +26,7 @@
       {/articles-homepage.results}
     </div>
 
-    <p class="section__more"><a class="btn" href="/resources">Read more</a></p>
+    <p class="section__more"><a class="btn" href="/resources">Read more articles</a></p>
   </section>
 
   <section class="section approach">
@@ -53,6 +55,8 @@
         <p><strong>Developed</strong> with the protection of human rights as a core principle</p>
       </div>
     </div>
+
+    <p class="section__more"><a class="btn" href="/about">More about us</a></p>
   </section>
 </main>
 
