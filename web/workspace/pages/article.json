@@ -1,0 +1,16 @@
+{
+  "page": {
+    "key": "article"
+  },
+  "datasources": [
+    "articles-all"
+  ],
+  "requiredDatasources": [
+    "articles-all"
+  ],
+  "routes": [
+    {
+      "path": "/resources/:slug"
+    }
+  ]
+}

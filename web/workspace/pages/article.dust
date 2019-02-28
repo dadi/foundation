@@ -1,0 +1,14 @@
+{>"partials/header" /}
+
+<main class="cnt">
+  <section class="grid">
+    <div class="col w-1-2">
+      <h2>{articles-all.results[0].title}</h2>
+    </div>
+    <div class="col w-1-2">
+      {@markdown}{articles-all.results[0].body}{/markdown}
+    </div>
+  </section>
+</main>
+
+{>"partials/footer" /}

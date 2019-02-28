@@ -1,0 +1,19 @@
+{
+  "datasource": {
+    "key": "articles-all",
+    "source": {
+      "endpoint": "1.0/foundation/articles"
+    },
+    "requestParams": [{
+      "param": "slug",
+      "field": "slug"
+    }],
+    "sort": {
+      "publishedAt": -1
+    },
+    "filter": {
+      "published": true
+    },
+    "count": 50
+  }
+}
