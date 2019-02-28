@@ -54,9 +54,9 @@
       </form>
 
       <ul>
-        <li><a href="/research">Research</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/research" {@eq key=page.key value="research"}class="active"{/eq}>Research</a></li>
+        <li><a href="/resources" {@eq key=page.key value="resources"}class="active"{/eq}>Resources</a></li>
+        <li><a href="/about" {@eq key=page.key value="about"}class="active"{/eq}>About</a></li>
       </ul>
     </nav>
   </div>

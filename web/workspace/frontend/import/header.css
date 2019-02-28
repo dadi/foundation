@@ -46,5 +46,8 @@ header a {
   display: inline-block;
 }
 .nav li a {
-  margin-right: 15px;
+  margin-right: 18px;
+}
+.nav a.active {
+  border-bottom: 1px solid;
 }
