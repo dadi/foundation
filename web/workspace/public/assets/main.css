@@ -5,6 +5,7 @@
   --color-accent-invert: #fff;
 
   --color-tint-light: #d8d7d6;
+  --color-tint-medium: #A5A5A2;
   --color-tint: #595a5a;
 }
 .grid:before,
@@ -136,6 +137,9 @@ h1, h2, h3, h4 {
 .fm {
   font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
+.medium {
+  font-size: 1.4rem;
+}
 .large {
   font-size: 1.7rem;
 }
@@ -191,6 +195,15 @@ p {
 }
 .btn:hover:before {
   display: block;
+}
+.color--tint {
+  color: var(--color-tint);
+}
+.color--tint-medium {
+  color: var(--color-tint-medium);
+}
+.color--tint-light {
+  color: var(--color-tint-light);
 }
 form label {
   display: block;
@@ -304,9 +317,19 @@ header a {
 }
 .section {
   margin-bottom: 4em;
+  border-top: 1px solid var(--color-tint-light);
+  padding-top: 30px;
 }
-.section__header {
+.section--no-border {
+  border-top: 0;
+}
+.section h2 {
+  margin-bottom: .6em;
+}
+.section__header,
+.section .section__header {
   font-size: 1rem;
+  margin-bottom: 30px;
 }
 .section__more {
   margin-top: 2em;
@@ -320,6 +343,7 @@ header a {
 .section--lead {
   padding: 100px 0;
   padding: 13vh 0;
+  border-top: 0;
 }
 .intro,
 .cta-map {
@@ -330,6 +354,9 @@ header a {
 }
 .cta-map {
   background-image: url(/newassets/map-nyc-tiles.png);
+}
+.latest .section__header {
+  margin-bottom: 0;
 }
 .latest__header {
   font-size: 1.8rem;
@@ -362,13 +389,6 @@ header a {
 .latest--list .latest__article:hover h3 {
   text-decoration: underline;
 }
-.approach {
-  border-top: 1px solid var(--color-tint-light);
-  padding-top: 30px;
-}
-.approach h2 {
-  margin-bottom: .6em;
-}
 .approach__highlights {
   text-align: center;
   margin-top: 60px;
@@ -376,7 +396,7 @@ header a {
 }
 .approach__icon {
   max-width: 200px;
-  margin: 0 auto 2em auto;
+  margin: 0 auto 30px auto;
   display: block;
 }
 .body--research {

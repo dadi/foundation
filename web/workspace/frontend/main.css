@@ -7,9 +7,19 @@
 
 .section {
   margin-bottom: 4em;
+  border-top: 1px solid var(--color-tint-light);
+  padding-top: 30px;
 }
-.section__header {
+.section--no-border {
+  border-top: 0;
+}
+.section h2 {
+  margin-bottom: .6em;
+}
+.section__header,
+.section .section__header {
   font-size: 1rem;
+  margin-bottom: 30px;
 }
 .section__more {
   margin-top: 2em;
@@ -24,6 +34,7 @@
 .section--lead {
   padding: 100px 0;
   padding: 13vh 0;
+  border-top: 0;
 }
 
 .intro,
@@ -39,6 +50,9 @@
 
 
 
+.latest .section__header {
+  margin-bottom: 0;
+}
 .latest__header {
   font-size: 1.8rem;
   margin-bottom: 0.6em;
@@ -72,13 +86,6 @@
 }
 
 
-.approach {
-  border-top: 1px solid var(--color-tint-light);
-  padding-top: 30px;
-}
-.approach h2 {
-  margin-bottom: .6em;
-}
 .approach__highlights {
   text-align: center;
   margin-top: 60px;
@@ -86,7 +93,7 @@
 }
 .approach__icon {
   max-width: 200px;
-  margin: 0 auto 2em auto;
+  margin: 0 auto 30px auto;
   display: block;
 }
 

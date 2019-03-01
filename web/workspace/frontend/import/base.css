@@ -31,6 +31,9 @@ h1, h2, h3, h4 {
   font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
 
+.medium {
+  font-size: 1.4rem;
+}
 .large {
   font-size: 1.7rem;
 }
@@ -93,4 +96,15 @@ p {
 }
 .btn:hover:before {
   display: block;
+}
+
+
+.color--tint {
+  color: var(--color-tint);
+}
+.color--tint-medium {
+  color: var(--color-tint-medium);
+}
+.color--tint-light {
+  color: var(--color-tint-light);
 }

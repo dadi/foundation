@@ -11,7 +11,7 @@
     </div>
   </section>
 
-  <section class="section latest">
+  <section class="section section--no-border latest">
     <h2 class="section__header fm">Latest News</h2>
 
     <div class="grid">

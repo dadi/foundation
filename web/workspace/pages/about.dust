@@ -56,6 +56,40 @@
   </section>
 
   <section class="section approach">
+    <h2 class="section__header fm">Who We Are</h2>
+    <div class="grid">
+      <div class="col w-1-2">
+        <p class="medium">Our founding company DADI provide voluntary technical expertise to our grantees, as well as design, web and administrative support for the foundation.</p>
+        <p class="medium">If you would like to use your skills to help engage future coders or support the work of amazing human rights defenders, please get in touch.</p>
+
+        <p class="color--tint-medium">*We are currently seeking experienced volunteers to help us with the following: Grants (Assessing applications, supporting projects, building products) and Education (Developing resources, mentoring coders, training activists)</p>
+      </div>
+      <div class="col col w-1-2">
+        <div class="grid">
+          <div class="col w-1-3">
+            <strong>Members</strong>
+          </div>
+          <div class="col w-2-3">
+            <p>Jennifer Martin-Nye<br><span class="color--tint-medium">Chief Executive</span></p>
+            <p>Alice Firebrace<br><span class="color--tint-medium">Project Development Officer</span></p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col w-1-3">
+            <strong>Board</strong>
+          </div>
+          <div class="col w-2-3">
+            <p>Tillie Mair<br><span class="color--tint-medium">Chair</span></p>
+            <p>Luella Lane<br><span class="color--tint-medium">Treasurer</span></p>
+            <p>Evergreen Armstrong<br><span class="color--tint-medium">Board Member</span></p>
+            <p>Cassie Robinson<br><span class="color--tint-medium">Board Member</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section approach">
     <div class="grid">
       <div class="col w-1-2">
         <h2 class="section__header fm">How we started</h2>
