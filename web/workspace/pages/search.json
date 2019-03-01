@@ -6,7 +6,11 @@
     "cache": false
   },
   "datasources": [
-    "search"
+    "search",
+    "static"
+  ],
+  "events": [
+    "static"
   ],
   "routes": [
     {
