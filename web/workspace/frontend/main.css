@@ -17,12 +17,8 @@
 }
 .section__more .btn {
   width: 100%;
-  border: 1px dotted var(--color-tint-light);
+  background: #F2F2F1;
   color: var(--color-tint);
-  background: none;
-}
-.section__more .btn:hover {
-  border-style: solid;
 }
 
 .section--lead {
@@ -93,7 +89,6 @@
   margin: 0 auto 2em auto;
   display: block;
 }
-
 
 
 .body--research {

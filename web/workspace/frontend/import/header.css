@@ -1,5 +1,5 @@
 .header {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 .header,
@@ -38,8 +38,6 @@ header a {
   text-decoration: none;
 }
 
-.nav {
-}
 
 .nav li {
   list-style: none;
@@ -48,6 +46,7 @@ header a {
 .nav li a {
   margin-right: 18px;
 }
-.nav a.active {
+.nav a.active,
+.nav a:hover {
   border-bottom: 1px solid;
 }

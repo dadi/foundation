@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 
-  <meta property="og:title" content="{+title/} | The DADI Foundation">
+  <meta property="og:title" content="{+title/} | DADI Foundation">
 
   <meta name="description" content="{static.meta_description}">
   <meta property="og:description" content="{static.meta_description}">
@@ -48,15 +48,43 @@
     </h1>
 
     <nav class="col w-1-2 nav">
-      <form action="/search" class="header__search">
-        <input type="hidden" name="_csrf" value="{csrf}">
-        <input class="search" id="search" type="search" name="query" value="">
+      <form id="search-form" action="/search" class="header__search">
+        <input type="hidden" name="_csrf" value="{csrfToken}">
+        <input class="search" id="search" type="search" name="query" value="{params.query|d}" onfocus="this.value = this.value">
       </form>
 
+      <script>
+        document.getElementById('search-form')
+          .addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'search/' + document.getElementById('search').value.trim().replace(' ', '+')
+          });
+      </script>
+
       <ul>
-        <li><a href="/research" {@eq key=page.key value="research"}class="active"{/eq}>Research</a></li>
-        <li><a href="/resources" {@eq key=page.key value="resources"}class="active"{/eq}>Resources</a></li>
-        <li><a href="/about" {@eq key=page.key value="about"}class="active"{/eq}>About</a></li>
+        <li>
+          <a 
+            href="/research"
+            {@eq key=page.key value="research"}
+              class="active"
+            {/eq}
+          >Research</a></li>
+        <li>
+          <a
+            href="/resources" 
+            {@select key=page.key}
+              {@eq value="resources"/}
+              {@eq value="article"/}
+              {@any}class="active"{/any}
+            {/select}
+          >Resources</a></li>
+        <li>
+          <a
+            href="/about"
+            {@eq key=page.key value="about"}
+              class="active"
+            {/eq}
+          >About</a></li>
       </ul>
     </nav>
   </div>
