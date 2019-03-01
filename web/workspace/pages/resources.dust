@@ -1,5 +1,7 @@
 {>"partials/header" /}
 
+{<bodyClass}body--tint{/bodyClass}
+
 {<title}Resources{/title}
 
 <main class="cnt">

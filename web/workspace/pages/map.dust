@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>Organisations</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
-<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
-<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
-<style>
-body { margin:0; padding:0; }
-#map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
-</head>
-<body>
+{>"partials/header" /}
+
+{<bodyClass}body--dark{/bodyClass}
+
+{<title}Organisations | Resources{/title}
+
+{<head}
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
+{/head}
  
 <div id="map"></div>
+
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFkaWNvIiwiYSI6IlVaOVU3QmMifQ.dDoTL04V_WtMo2iQkfvZBg';
 
@@ -22,8 +19,8 @@ var data = {organisations.results|js|s};
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/dadico/cjrrouhxv2jx12so5co2b85vj',
-  center: [0, 0],
+  style: 'mapbox://styles/dadico/cjf1cbtki001g2sqg66j4lszj',
+  center: [0, 30],
   zoom: 1.4
 });
 

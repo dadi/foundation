@@ -247,7 +247,7 @@ form .btn {
   cursor: pointer;
 }
 .header {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .header,
@@ -400,31 +400,39 @@ header a {
   margin: 0 auto 30px auto;
   display: block;
 }
-.body--research {
+#map {
+  color: var(--color-text);
+  height: 550px;
+  height:70vh;
+  width: 100%;
+  border-top: 1px solid rgba(53,80,84,0.3);
+  border-bottom: 1px solid rgba(53,80,84,0.3);
+}
+.body--dark {
   background: var(--color-text);
   color: var(--color-white);
 }
-.body--research .header h1 {
+.body--dark .header h1 {
   color: var(--color-white);
 }
-.body--research .btn {
+.body--dark .btn {
   background: var(--color-white);
   color: var(--color-text);
 }
-.body--research .header__search input {
+.body--dark .header__search input {
   color: #fff;
   background-image: url(/newassets/icon-search-light.svg);
 }
-.body--resources {
+.body--tint {
   background: var(--color-tint-light);
 }
-.body--resources .header h1 {
+.body--tint .header h1 {
   color: var(--color-text);
 }
-.body--resources .footer .section {
+.body--tint .footer .section {
   border-top: 1px solid var(--color-text);
 }
-.body--resources .footer .btn {
+.body--tint .footer .btn {
   background: var(--color-text);
   color: var(--color-tint-light);
 }

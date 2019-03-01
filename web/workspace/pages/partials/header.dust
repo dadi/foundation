@@ -35,8 +35,10 @@
   <link rel="icon" href="/assets/favicon.png">
 
   <link rel="stylesheet" type="text/css" href="/assets/main.min.css?v=2">
+
+  {+head/}
 </head>
-<body class="body--{page.key}">
+<body class="body--{page.key} {+bodyClass/}">
 
 <header class="header cnt fm">
   <div class="grid">
@@ -65,9 +67,11 @@
         <li>
           <a 
             href="/research"
-            {@eq key=page.key value="research"}
-              class="active"
-            {/eq}
+            {@select key=page.key}
+              {@eq value="research"/}
+              {@eq value="map"/}
+              {@any}class="active"{/any}
+            {/select}
           >Research</a></li>
         <li>
           <a

@@ -3,13 +3,15 @@
     "key": "map"
   },
   "datasources": [
-    "organisations"
+    "organisations",
+    "static"
   ],
   "events": [
+    "static"
   ],
   "routes": [
     {
-      "path": "/resources/organisations"
+      "path": "/research/orgs"
     }
   ]
 }
