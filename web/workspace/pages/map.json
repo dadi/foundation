@@ -12,7 +12,7 @@
   ],
   "routes": [
     {
-      "path": "/research/orgs"
+      "path": "/research/orgs/:org"
     }
   ]
 }

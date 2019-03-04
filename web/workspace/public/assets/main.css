@@ -344,6 +344,80 @@ header a {
 .directory__letter a:hover {
   background: rgba(53,80,84,0.2);
 }
+.article {
+  line-height: 1.5em;
+}
+.article p {
+  margin-bottom: 1.2rem;
+}
+.article h1, .article h2, .article h3, .article h4 {
+    margin: 1.5em 0 1em;
+}
+.article h1:first-child, .article h2:first-child, .article h3:first-child, .article h4:first-child {
+    margin-top: 0;
+}
+.article img {
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto; 
+  margin: 2em auto;
+}
+.article > p:first-of-type img {
+  margin-top: 0;
+}
+.article iframe {
+  max-width: 100%;
+}
+.article ul,
+.article ol {
+  margin: 1.5em auto;
+}
+.article ol li, .article ul li {
+  margin: 0.2em 1.2em;
+}
+.article a {
+  border-bottom: 1px solid var(--color-tint-light);
+  transition: all 0.2s;
+  color: var(--color-accent);
+  word-break: break-word;
+}
+.article a:hover {
+  background: #eee;
+  border-color: var(--color-accent); 
+}
+.article table {
+  display: block;
+  width: 100%;
+  word-break: normal;
+  word-break: keep-all;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 40px 0;
+
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.article table tbody {
+  box-shadow: 7px 7px 4px 0 rgba(0,0,0,0.02);
+}
+.article table th {
+  font-weight: bold;
+}
+.article table th,
+.article table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.article table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.article table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.article table tr:hover {
+  background-color: #EDEDED;
+}
 .section {
   margin-bottom: 4em;
   border-top: 1px solid var(--color-tint-light);

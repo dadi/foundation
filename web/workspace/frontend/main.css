@@ -6,6 +6,7 @@
 @import "./import/footer.css";
 
 @import "./import/directory.css";
+@import "./import/article.css";
 
 .section {
   margin-bottom: 4em;
