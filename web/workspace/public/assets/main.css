@@ -134,21 +134,24 @@ body {
 h1, h2, h3, h4 {
   font-weight: normal;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .fm {
   font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
 .medium {
   font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 .large {
   font-size: 1.7rem;
-}
-a {
-  text-decoration: none;
-  color: inherit;
+  line-height: 2.1rem;
 }
 p {
   margin-bottom: 1.1em;
+  line-height: 1.5rem;
 }
 .mt {
   margin-top: 40px;
