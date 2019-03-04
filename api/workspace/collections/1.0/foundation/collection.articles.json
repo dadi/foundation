@@ -41,6 +41,9 @@
           "edit": true,
           "list": true
         }
+      },
+      "search": {
+        "weight": 1
       }
     },
     "slug": {
@@ -120,6 +123,9 @@
           "list": true
         },
         "heightType": "content"
+      },
+      "search": {
+        "weight": 3
       }
     },
     "body": {
@@ -136,6 +142,9 @@
         },
         "heightType": "content",
         "resizable": true
+      },
+      "search": {
+        "weight": 2
       }
     }
   },
