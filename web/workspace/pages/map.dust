@@ -88,7 +88,7 @@ function plotOrg(org, map) {
           <h2 class="org__name">{title}</h2>
           {?about}{@markdown}{about}{/markdown}{/about}
           <p><a href="{url}" class="org__website btn">Visit website</a></p>
-          <p><a href="mailto:{contact}">{contact}</a></p>
+          <p>Contact details:<br>{contact}</p>
         </div>
         <div class="col w-1-2 org__meta">
           <div class="grid">
