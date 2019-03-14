@@ -5,9 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watch 'npm run build' workspace/frontend/ -d -u & npm start",
-    "build": "postcss --use postcss-import --use autoprefixer --autoprefixer.browsers '> 1%' workspace/frontend/main.css -o workspace/public/assets/main.css --map && npm run mincss",
-    "mincss": "cleancss -o workspace/public/assets/main.min.css workspace/frontend/main.css --source-map && npm run minjs",
+    "watch": "postcss workspace/frontend/main.css --watch --no-map --verbose --output workspace/public/bundle.css & npm start",
+    "build": "postcss workspace/frontend/main.css --no-map --verbose --output workspace/public/bundle.css",
     "minjs": "uglifyjs workspace/frontend/main.js -o workspace/public/assets/main.min.js"
   },
   "author": "",
@@ -22,9 +21,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.3.1",
-    "clean-css-cli": "^4.2.1",
+    "postcss-clean": "^1.1.0",
     "postcss-cli": "^6.0.1",
     "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.6.0",
     "uglify-js": "^3.4.9",
     "watch": "^1.0.2"
   }

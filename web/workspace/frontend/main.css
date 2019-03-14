@@ -38,8 +38,9 @@
   padding: 100px 0;
   padding: 13vh 0;
   border-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
+
 
 .intro,
 .cta-map {
@@ -51,6 +52,26 @@
 .cta-map {
   background-image: url(/newassets/map-nyc-tiles.png);
 }
+
+.intro {
+  text-shadow:
+   -1px -1px 0 #f9f8f6,  
+    1px -1px 0 #f9f8f6,
+    -1px 1px 0 #f9f8f6,
+     1px 1px 0 #f9f8f6;
+}
+
+@media (--bl) {
+  .intro {
+    padding: 100px 0;
+    padding: 30vh 0 0 0;
+    margin-bottom: 40px;
+    background-size: 65% auto;
+    background-position: 100% 50%;
+  }
+}
+
+
 
 
 
@@ -75,6 +96,11 @@
 .latest__category {
   color: var(--color-tint);
 }
+.latest__date {
+  margin-top: -10px;
+  font-size: 1rem;
+}
+
 .latest--list .latest__header {
   color: inherit;
   padding-top: 0;

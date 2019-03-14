@@ -5,8 +5,8 @@
 <main class="cnt">
   <section class="section section--lead intro">
     <div class="grid">
-      <div class="col col--right w-1-2">
-        <h2 class="large">We will work with the tech industry and human rights sector to tackle the root causes of injustice, equipping future technologists and activists with the skills to build and participate in robust and inclusive democracies.</h2>
+      <div class="col w-1-2">
+        <h2 class="large">We work with the tech industry and human rights sector to tackle the root causes of injustice, equipping future technologists and activists with the skills to build and participate in robust and inclusive democracies.</h2>
       </div>
     </div>
   </section>
@@ -19,6 +19,7 @@
         <article class="latest__article col w-1-3">
           <a href="/resources/{slug}">
             <h3 class="latest__header">{title}</h3>
+            <p class="latest__date">{@formatDate unix=publishedAt format="YYYY/MM/DD" /}</p>
             <p class="latest__excerpt">{excerpt}</p>
             <p class="latest__category">— {category[0].name}</p>
           </a>

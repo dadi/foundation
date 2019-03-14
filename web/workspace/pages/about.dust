@@ -95,11 +95,11 @@
         <h2 class="section__header fm">How we started</h2>
       </div>
       <div class="col col--right col w-1-2 approach__headline">
-        <p class="large">DADI established the Foundation as a natural extension of its work to democratise the Internet.</p>
+        <p class="medium">DADI established the Foundation as a natural extension of its work to democratise the Internet.</p>
 
-        <p class="large">DADI is a decentralised cloud services platform - a network collectively owned by the people rather than individual autonomous organisations. Taking this a step further, the Foundation enables technology to directly further the cause of democracy.</p>
+        <p>DADI is a decentralised cloud services platform - a network collectively owned by the people rather than individual autonomous organisations. Taking this a step further, the Foundation enables technology to directly further the cause of democracy.</p>
 
-        <p class="large">DADI provided an initial donation of 350 ETH, and will continue to support the work of the Foundation contributing a percentage of all transactions in the network.</p>
+        <p>DADI provided an initial donation of 350 ETH, and will continue to support the work of the Foundation contributing a percentage of all transactions in the network.</p>
       </div>
     </div>
   </section>

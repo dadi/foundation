@@ -19,3 +19,17 @@
   background-position: 100% 50%;
   background-size: auto 12px;
 }
+.footer__donate li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.footer__donate input {
+  width: 100%;
+  background: none;
+  border: 0;
+  font-size: 0.8rem;
+}
+.footer h3 {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}

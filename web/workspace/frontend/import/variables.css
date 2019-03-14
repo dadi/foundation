@@ -8,3 +8,6 @@
   --color-tint-medium: #A5A5A2;
   --color-tint: #595a5a;
 }
+
+@custom-media --bs (max-width: 800px);
+@custom-media --bl (min-width: 800px);
