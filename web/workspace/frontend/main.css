@@ -154,6 +154,9 @@
   color: #fff;
   background-image: url(/newassets/icon-search-light.svg);
 }
+.body--dark .footer__donate input {
+  color: #fff;
+}
 
 .body--tint {
   background: var(--color-tint-light);

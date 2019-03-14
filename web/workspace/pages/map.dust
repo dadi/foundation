@@ -45,9 +45,14 @@ function plotOrg(org, map) {
     .then(function(response) {
       var feature = response.body.features[0];
 
-      var popup = new mapboxgl.Popup({ offset: 25 }).setHTML('<a href="'+link+'">'+org.title+'</a>');
+      var popup = new mapboxgl
+        .Popup({ offset: 25 })
+        .setHTML('<a href="'+link+'">'+org.title+'</a>');
+
+      var marker = document.createElement('div');
+      marker.className = 'directory__marker';
          
-      new mapboxgl.Marker()
+      new mapboxgl.Marker(marker)
         .setLngLat(feature.center)
         .setPopup(popup)
         .addTo(map);
@@ -56,6 +61,8 @@ function plotOrg(org, map) {
 </script>
 
 <main class="cnt">
+  {! <p><a class="btn" href="#filter">Filter</a></p> !}
+
   <div class="directory">
     {#organisationsGrouped}
       <dl class="directory__letter">
@@ -71,25 +78,62 @@ function plotOrg(org, map) {
 {:else}
 
   <main class="cnt">
+    <div class="section section--lead">
+      <h2><a href="/research/orgs/">Organisations</a></h2>
+    </div>
+
     {#organisations.results}
       <div class="grid">
         <div class="col w-1-2">
-          <h2>{title}</h2>
-          <p><a href="{url}">{url}</a></p>
+          <h2 class="org__name">{title}</h2>
+          {?about}{@markdown}{about}{/markdown}{/about}
+          <p><a href="{url}" class="org__website btn">Visit website</a></p>
           <p><a href="mailto:{contact}">{contact}</a></p>
         </div>
-        <div class="col w-1-2">
+        <div class="col w-1-2 org__meta">
           <div class="grid">
-            <div class="col w-1-2">Based in</div>
+            <div class="col w-1-2"><strong>Structure</strong></div>
+            <div class="col w-1-2">{structure.title}</div>
+          </div>
+          <div class="grid">
+            <div class="col w-1-2"><strong>Based in</strong></div>
             <div class="col w-1-2">{basedIn}</div>
           </div>
           <div class="grid">
-            <div class="col w-1-2">Acting in</div>
+            <div class="col w-1-2"><strong>Acting in</strong></div>
             <div class="col w-1-2">{actingIn}</div>
           </div>
           <div class="grid">
-            <div class="col w-1-2">Focus</div>
+            <div class="col w-1-2"><strong>Focus</strong></div>
             <div class="col w-1-2">{focus.title}</div>
+          </div>
+          <div class="grid">
+            <div class="col w-1-2"><strong>Organisation type</strong></div>
+            <div class="col w-1-2">
+              {#organisationType}
+                {title}{@sep}<br>{/sep}
+              {/organisationType}
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col w-1-2"><strong>Democratic focus</strong></div>
+            <div class="col w-1-2">
+              {#democracyFocus}
+                {title}{@sep}<br>{/sep}
+              {/democracyFocus}
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col w-1-2"><strong>Tech focus</strong></div>
+            <div class="col w-1-2">
+              {#techFocus}
+                {title}{@sep}<br>{/sep}
+              {/techFocus}
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col w-1-2"><strong>Activities</strong></div>
+            <div class="col w-1-2">{activities}</div>
           </div>
         </div>
       </div>

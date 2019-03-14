@@ -5,7 +5,7 @@
 {#articles-all.results}
   <main class="cnt">
     <section class="grid">
-      <div class="col col--right w-1-3">
+      <div class="col w-1-3">
         <h2 class="latest__header">{title}</h2>
 
         {?publishedAt}

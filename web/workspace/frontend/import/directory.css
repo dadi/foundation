@@ -27,3 +27,30 @@
 .directory__letter a:hover {
   background: rgba(53,80,84,0.2);
 }
+
+.directory__marker {
+  width: 10px; height: 10px;
+  border-radius: 10px;
+  background: var(--color-accent);
+  display: block;
+  box-shadow: 0 0 0 1px var(--color-text);
+  cursor: pointer;
+}
+
+
+.org__name {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+.org__meta {
+  padding-top: 10px;
+}
+.org__meta .grid {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.org__website {
+  font-size: 0.9rem;
+  background: #1e2934 !important;
+  color: #fff !important;
+}
