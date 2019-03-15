@@ -1,0 +1,8 @@
+{
+  "datasource": {
+    "key": "orgDemocracy",
+    "source": {
+      "endpoint": "1.0/foundation/democracyFocus"
+    }
+  }
+}

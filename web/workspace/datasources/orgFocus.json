@@ -1,0 +1,8 @@
+{
+  "datasource": {
+    "key": "orgFocus",
+    "source": {
+      "endpoint": "1.0/foundation/organisationFocus"
+    }
+  }
+}

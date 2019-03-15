@@ -1,19 +1,17 @@
 {
   "page": {
-    "key": "map"
+    "key": "org"
   },
   "datasources": [
     "organisations",
-    "static",
-    "orgTech"
+    "static"
   ],
   "events": [
-    "static",
-    "map"
+    "static"
   ],
   "routes": [
     {
-      "path": "/research/map"
+      "path": "/research/org/:org?"
     }
   ]
 }
