@@ -62,16 +62,10 @@ function plotOrg(org, map) {
   <form method="post" action="/research/map" class="directory__filters">
     <div class="grid">
       <dl class="col w-1-5">
-        <dt>Democracy</dt>
-        {#orgDemocracy.results}
-          {>"partials/mapFilterItem" field="democracyFocus" /}
-        {/orgDemocracy.results}
-      </dl>
-      <dl class="col w-1-5">
-        <dt>Focus</dt>
-        {#orgFocus.results}
-          {>"partials/mapFilterItem" field="focus" /}
-        {/orgFocus.results}
+        <dt>Type</dt>
+        {#orgType.results}
+          {>"partials/mapFilterItem" field="organisationType" /}
+        {/orgType.results}
       </dl>
       <dl class="col w-1-5">
         <dt>Structure</dt>
@@ -80,16 +74,22 @@ function plotOrg(org, map) {
         {/orgStructure.results}
       </dl>
       <dl class="col w-1-5">
-        <dt>Technology</dt>
+        <dt>Focus</dt>
+        {#orgFocus.results}
+          {>"partials/mapFilterItem" field="focus" /}
+        {/orgFocus.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Democratic focus</dt>
+        {#orgDemocracy.results}
+          {>"partials/mapFilterItem" field="democracyFocus" /}
+        {/orgDemocracy.results}
+      </dl>     
+      <dl class="col w-1-5">
+        <dt>Technology focus</dt>
         {#orgTech.results}
           {>"partials/mapFilterItem" field="techFocus" /}
         {/orgTech.results}
-      </dl>
-      <dl class="col w-1-5">
-        <dt>Type</dt>
-        {#orgType.results}
-          {>"partials/mapFilterItem" field="organisationType" /}
-        {/orgType.results}
       </dl>
     </div>
 
