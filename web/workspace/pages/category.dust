@@ -18,6 +18,8 @@
     <div class="grid">
       {#articles-all.results}
         {>"partials/articleGrid" /}
+      {:else}
+        <p style="text-align:center">Coming soon…</p>
       {/articles-all.results}
     </div>
   </section>
