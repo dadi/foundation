@@ -39,7 +39,6 @@
 
 .directory__filters {
   margin-top: -15px;
-  margin-bottom: 10px;
 }
 .directory__filters input {
   display: inline-block;
@@ -52,6 +51,9 @@
   margin: 0;
   display: block;
   cursor: pointer;
+}
+.directory__filters dl {
+  margin-bottom: 10px;
 }
 .directory__filters dt {
   margin-bottom: 15px;
