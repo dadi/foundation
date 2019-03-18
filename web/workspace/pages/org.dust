@@ -16,8 +16,8 @@
     <div class="grid">
       <div class="col w-1-2">
         {?about}{@markdown}{about}{/markdown}{/about}
-        <p><a href="{url}" class="org__website btn">Visit website</a></p>
-        <p>Contact details:<br>{contact}</p>
+        <p><a href="{url}" class="org__website btn" target="_blank">Visit website</a></p>
+        <p>Contact details:<br>{?contact}{contact}{:else}None yet{/contact}</p>
       </div>
       <div class="col w-1-2 org__meta">
         <div class="grid">

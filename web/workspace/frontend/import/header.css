@@ -18,8 +18,10 @@
   margin-right: 10px;
 }
 
-.header__search {
-  float: right;
+@media (--bl) {
+  .header__search {
+    float: right;
+  }
 }
 .header__search input {
   background-image: url(/newassets/icon-search.svg);
@@ -32,6 +34,17 @@
   font-size: 0.9rem;
   padding-right: 25px;
   -webkit-appearance: none;
+}
+
+@media (--bs) {
+  .header__search {
+    margin-top: 10px;
+  }
+  .header__search input {
+    text-align: left;
+    background-position: 0% 50%;
+    padding-left: 25px;
+  }
 }
 
 header a {

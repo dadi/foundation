@@ -34,7 +34,7 @@
 
   <link rel="icon" href="/assets/favicon.png">
 
-  <link rel="stylesheet" type="text/css" href="/bundle.css">
+  <link rel="stylesheet" type="text/css" href="/bundle.css?v=1">
 
   {+head/}
 </head>
@@ -85,6 +85,8 @@
             href="/research" 
             {@select key=page.key}
               {@eq value="research"/}
+              {@eq value="map"/}
+              {@eq value="org"/}
               {@any}class="active"{/any}
             {/select}
           >Research</a></li>
