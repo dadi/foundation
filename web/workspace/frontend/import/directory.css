@@ -37,6 +37,35 @@
   cursor: pointer;
 }
 
+.directory__filters {
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.directory__filters input {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+.directory__filters label {
+  font-weight: normal;
+  padding: 4px 0;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+}
+.directory__filters dt {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.directory__filters label:hover {
+  color: var(--color-accent);
+}
+.directory__filters button.btn {
+  background: #1e2934;
+  color: #fff;
+}
+
+
 
 .org__name {
   color: var(--color-accent);
@@ -54,3 +83,4 @@
   background: #1e2934 !important;
   color: #fff !important;
 }
+

@@ -5,7 +5,11 @@
   "datasources": [
     "organisations",
     "static",
-    "orgTech"
+    "orgDemocracy",
+    "orgFocus",
+    "orgStructure",
+    "orgTech",
+    "orgType"
   ],
   "events": [
     "static",

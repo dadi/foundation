@@ -31,7 +31,7 @@ for (var i = 0; i < data.length; i++) {
 }
 
 function plotOrg(org, map) {
-  var link = '/research/org/'+org.slug;
+  var link = '/research/org/'+org._id;
 
   mapboxClient
     .geocoding.forwardGeocode({
@@ -59,25 +59,53 @@ function plotOrg(org, map) {
 </script>
 
 <main class="cnt">
-  <div class="grid">
-    <div class="col w-1-5">
+  <form method="post" action="/research/map" class="directory__filters">
+    <div class="grid">
+      <dl class="col w-1-5">
+        <dt>Democracy</dt>
+        {#orgDemocracy.results}
+          {>"partials/mapFilterItem" field="democracyFocus" /}
+        {/orgDemocracy.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Focus</dt>
+        {#orgFocus.results}
+          {>"partials/mapFilterItem" field="focus" /}
+        {/orgFocus.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Structure</dt>
+        {#orgStructure.results}
+          {>"partials/mapFilterItem" field="structure" /}
+        {/orgStructure.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Technology</dt>
+        {#orgTech.results}
+          {>"partials/mapFilterItem" field="techFocus" /}
+        {/orgTech.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Type</dt>
+        {#orgType.results}
+          {>"partials/mapFilterItem" field="organisationType" /}
+        {/orgType.results}
+      </dl>
     </div>
-    <div class="col w-1-5">
-    </div>
-    <div class="col w-1-5">
-    </div>
-    <div class="col w-1-5">
-    </div>
-    <div class="col w-1-5">
-    </div>
-  </div>
+
+    <p class="section__more">
+      <button type="submit" class="btn">
+        Filter organisations (showing {organisations.results.length})
+      </button>
+    </p>
+  </form>
 
   <div class="directory">
     {#organisationsGrouped}
       <dl class="directory__letter">
         <dt>{letter}</dt>
         {#orgs}
-          <dd><a href="/research/org/{slug}">{title}</a></dd>
+          <dd><a href="/research/org/{_id}">{title}</a></dd>
         {/orgs}
       </dl>
     {/organisationsGrouped}

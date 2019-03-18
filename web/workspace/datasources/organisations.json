@@ -4,6 +4,10 @@
     "source": {
       "endpoint": "1.0/foundation/organisations?compose=1"
     },
+    "requestParams": [{
+      "param": "org",
+      "field": "_id"
+    }],
     "count": 1000,
     "filterEvent": "filterOrg"
   }
