@@ -40,6 +40,9 @@ header a {
 }
 
 
+.nav {
+  padding-top: 3px;
+}
 .nav li {
   list-style: none;
   display: inline-block;

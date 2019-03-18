@@ -1,13 +1,17 @@
-.directory {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 -1%;
+@media (--bl) {
+  .directory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+  }
+  .directory__letter {
+    width: 18%;
+    margin: 1%;
+  }
 }
-.directory__letter {
-  width: 18%;
-  margin: 1%;
-}
+
+
 .directory__letter dt {
   border-bottom: 1px solid var(--color-accent);
   color: var(--color-accent);

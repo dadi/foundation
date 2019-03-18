@@ -61,6 +61,17 @@ p {
   margin-bottom: 80px;
 }
 
+
+
+.cnt {
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10rem;
+  max-width: 1200px;
+}
+
+@media (--bs) {
 .cnt {
   margin-top: 5%;
   margin-right: 5%;
@@ -68,15 +79,6 @@ p {
   margin-bottom: 80px;
   width: 80%;
 }
-
-@media (min-width: 800px) {
-  .cnt {
-    margin-top: 4rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10rem;
-    max-width: 1200px;
-  }
 }
 
 
