@@ -66,22 +66,28 @@
       <ul>
         <li>
           <a 
-            href="/research"
+            href="/grants"
+            {@select key=params.category}
+              {@eq value="grants"/}
+              {@any}class="active"{/any}
+            {/select}
+          >Grants</a></li>
+        <li>
+          <a 
+            href="/education"
+            {@select key=params.category}
+              {@eq value="education"/}
+              {@any}class="active"{/any}
+            {/select}
+          >Education</a></li>
+        <li>
+          <a
+            href="/research" 
             {@select key=page.key}
               {@eq value="research"/}
-              {@eq value="map"/}
               {@any}class="active"{/any}
             {/select}
           >Research</a></li>
-        <li>
-          <a
-            href="/resources" 
-            {@select key=page.key}
-              {@eq value="resources"/}
-              {@eq value="article"/}
-              {@any}class="active"{/any}
-            {/select}
-          >Resources</a></li>
         <li>
           <a
             href="/about"

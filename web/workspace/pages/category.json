@@ -1,17 +1,21 @@
 {
   "page": {
-    "key": "resources"
+    "key": "category"
   },
   "datasources": [
+    "categories",
     "articles-all",
     "static"
+  ],
+  "requiredDatasources": [
+    "categories"
   ],
   "events": [
     "static"
   ],
   "routes": [
     {
-      "path": "/resources"
+      "path": "/:category"
     }
   ]
 }

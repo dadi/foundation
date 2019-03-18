@@ -14,7 +14,7 @@
   ],
   "routes": [
     {
-      "path": "/resources/:slug"
+      "path": "/:category/:title"
     }
   ]
 }

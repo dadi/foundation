@@ -66,8 +66,8 @@
     padding: 100px 0;
     padding: 30vh 0 0 0;
     margin-bottom: 40px;
-    background-size: 65% auto;
-    background-position: 100% 50%;
+    background-size: auto 100%;
+    background-position: 100% 100%;
   }
 }
 

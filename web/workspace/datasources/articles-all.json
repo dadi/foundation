@@ -5,8 +5,11 @@
       "endpoint": "1.0/foundation/articles"
     },
     "requestParams": [{
-      "param": "slug",
+      "param": "title",
       "field": "slug"
+    }, {
+      "param": "category",
+      "field": "category.slug"
     }],
     "sort": {
       "publishedAt": -1
@@ -14,6 +17,6 @@
     "filter": {
       "published": true
     },
-    "count": 50
+    "count": 18
   }
 }
