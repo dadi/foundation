@@ -69,16 +69,18 @@ p {
   margin-left: auto;
   margin-bottom: 10rem;
   max-width: 1200px;
+  padding: 0 5%;
 }
 
 @media (--bs) {
-.cnt {
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-bottom: 80px;
-  width: 80%;
-}
+  .cnt {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 80px;
+    padding :0;
+    width: 80%;
+  }
 }
 
 
