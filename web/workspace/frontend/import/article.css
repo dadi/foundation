@@ -7,10 +7,11 @@
 }
 
 .article h1, .article h2, .article h3, .article h4 {
-    margin: 1.5em 0 1em;
+  margin: 1.5em 0 1em;
+  line-height: 1.2em;
 }
 .article h1:first-child, .article h2:first-child, .article h3:first-child, .article h4:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }   
 
 .article img {
