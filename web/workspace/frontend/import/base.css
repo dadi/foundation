@@ -15,37 +15,40 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-weight: 200;
-  /* background-image: linear-gradient(left bottom, #f9f8f6 0%, #ffffff 100%); */
   background: #f9f8f6;
-  color: #595a5a;
+  color: #04111d;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-size: cover;
   font-size: 1.15rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4 {
   font-weight: normal;
 }
 
-h2 {
-  font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-top: 1px solid #d8d7d6;
-  font-size: 1rem;
-  padding: 20px 0;
-  margin-bottom: 2em;
-  color: #04111d;
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
-footer h2,
-.bg-dark h2 {
-  color: #84878b;
-  border-color: #525357;
+
+.fm {
+  font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
-h3 {
-  font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f44b00;
+
+.medium {
   font-size: 1.4rem;
-  margin-bottom: 0.5em;
-  font-weight: normal;
+  line-height: 1.8rem;
+}
+.large {
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+}
+
+p {
+  margin-bottom: 1.1em;
+  line-height: 1.5rem;
 }
 
 .mt {
@@ -58,153 +61,58 @@ h3 {
   margin-bottom: 80px;
 }
 
+
+
 .cnt {
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-bottom: 80px;
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10rem;
+  max-width: 1200px;
+  padding: 0 5%;
 }
 
-@media (min-width: 800px) {
+@media (--bs) {
   .cnt {
-    margin-top: 4rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    margin-bottom: 10rem;
-  }
-}
-
-header h1 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.nav {
-  margin-top: 10%;
-  margin-bottom: 4rem;
-}
-.nav ul {
-  list-style: none;
-  font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.nav a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  padding: 2px;
-  color: #04111d;
-}
-.nav a:hover,
-.nav a.active {
-  color: #f44b00;
-}
-
-@media (max-width: 800px) {
-  header {
-    margin-top: 8%;
-    z-index: 1;
-    position: absolute;
-    left: 6%; right: 6%
-  }
-  .header--static {
-    position: static;
-    margin: 30px 6% 0 6%;
-  }
-  header h1 img {
-    max-width: 200px;
-  }
-  header {
-    font-size: 1rem;
-  }
-  .nav {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #d8d7d6;
-    width: 100%;
-  }
-  .nav a {
-    color: #84878b;
-  }
-}
-
-@media (min-width: 800px) {
-  header {
-    position: fixed;
-    left: 0; top: 4.5rem; bottom: 0;
-    width: 30%;
-    z-index: 1;
-  }
-  .nav {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-  }
-  header h1 {
-    margin-left: 4rem;
-  }
-  .nav a { 
-    padding-left: 4rem;
-  }
-  .cnt {
-    padding: 0;
-    padding-left: 28%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 80px;
+    padding :0;
+    width: 80%;
   }
 }
 
 
 .btn {
-  background: #f44b00;
-  color: #fff;
-  border-radius: 100px;
-  padding: 5px 12px;
+  background: var(--color-accent);
+  color: var(--color-accent-invert);
+  padding: 12px 15px;
   display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+  font-family: 'Roboto Mono','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
+  font-size: 0.95rem;
 }
-.btn:hover {
-  color: #fff;
+.btn:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,0.05);
+  content: '';
+  display: none;
 }
-
-
-main {
-  background: #f9f8f6;
-  overflow: hidden;
-}
-main p,
-footer p,
-main li {
-  margin-bottom: 1em;
-  font-size: 1.3rem;
-  line-height: 1.9rem;
-}
-main li {
-  margin-bottom: 5px;
-  list-style: square;
-  margin-left: 1em;
-  padding-left: 0.3em;
+.btn:hover:before {
+  display: block;
 }
 
-main p strong {
-  color: #04111d;
-  font-weight: 400;
-}
 
-main a {
-  border-bottom: 1px solid #f44b00;
-  text-decoration: none;
-  color: #04111d;
+.color--tint {
+  color: var(--color-tint);
 }
-main a:hover {
-  color: #f44b00;
+.color--tint-medium {
+  color: var(--color-tint-medium);
 }
-
-.grid ul {
-  margin-bottom: 2em;
-}
-.grid li {
-  list-style: none;
-  border-bottom: 1px solid #d8d7d6;
-  margin: 0;
-  color: #84878b;
-}
-.grid li:last-of-type {
-  border: 0;
+.color--tint-light {
+  color: var(--color-tint-light);
 }

@@ -1,0 +1,116 @@
+{>"partials/header" /}
+
+{<bodyClass}body--dark{/bodyClass}
+
+{<title}Organisations | Resources{/title}
+
+{<head}
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
+{/head}
+
+<div id="map"></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGFkaWNvIiwiYSI6IlVaOVU3QmMifQ.dDoTL04V_WtMo2iQkfvZBg';
+
+var data = {organisations.results|js|s};
+
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/dadico/cjf1cbtki001g2sqg66j4lszj',
+  center: [0, 30],
+  zoom: 1.4
+});
+
+var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
+
+for (var i = 0; i < data.length; i++) { 
+  plotOrg(data[i], map);
+}
+
+function plotOrg(org, map) {
+  var link = '/research/org/'+org._id;
+
+  mapboxClient
+    .geocoding.forwardGeocode({
+      query: org.basedIn,
+      autocomplete: false,
+      limit: 1
+    })
+    .send()
+    .then(function(response) {
+      var feature = response.body.features[0];
+
+      var popup = new mapboxgl
+        .Popup({ offset: 25 })
+        .setHTML('<a href="'+link+'">'+org.title+'</a>');
+
+      var marker = document.createElement('div');
+      marker.className = 'directory__marker';
+         
+      new mapboxgl.Marker(marker)
+        .setLngLat(feature.center)
+        .setPopup(popup)
+        .addTo(map);
+    });
+}
+</script>
+
+<main class="cnt">
+  <form method="post" action="/research/map" class="directory__filters">
+    <div class="grid">
+      <dl class="col w-1-5">
+        <dt>Type</dt>
+        {#orgType.results}
+          {>"partials/mapFilterItem" field="organisationType" /}
+        {/orgType.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Structure</dt>
+        {#orgStructure.results}
+          {>"partials/mapFilterItem" field="structure" /}
+        {/orgStructure.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Focus</dt>
+        {#orgFocus.results}
+          {>"partials/mapFilterItem" field="focus" /}
+        {/orgFocus.results}
+      </dl>
+      <dl class="col w-1-5">
+        <dt>Democratic focus</dt>
+        {#orgDemocracy.results}
+          {>"partials/mapFilterItem" field="democracyFocus" /}
+        {/orgDemocracy.results}
+      </dl>     
+      <dl class="col w-1-5">
+        <dt>Technology focus</dt>
+        {#orgTech.results}
+          {>"partials/mapFilterItem" field="techFocus" /}
+        {/orgTech.results}
+      </dl>
+    </div>
+
+    <p class="section__more">
+      <button type="submit" class="btn">
+        Filter organisations (showing {organisations.results.length})
+      </button>
+    </p>
+  </form>
+
+  <div class="directory">
+    {#organisationsGrouped}
+      <dl class="directory__letter">
+        <dt>{letter}</dt>
+        {#orgs}
+          <dd><a href="/research/org/{_id}">{title}</a></dd>
+        {/orgs}
+      </dl>
+    {/organisationsGrouped}
+  </div>
+</main>
+ 
+</body>
+</html>

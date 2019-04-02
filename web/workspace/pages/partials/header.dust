@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>DADI Foundation</title>
+  <title>{+title/} | DADI Foundation</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,400b|Roboto+Mono" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 
   <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 
-  <meta property="og:title" content="The DADI Foundation">
+  <meta property="og:title" content="{+title/} | DADI Foundation">
 
   <meta name="description" content="{static.meta_description}">
   <meta property="og:description" content="{static.meta_description}">
@@ -34,22 +34,70 @@
 
   <link rel="icon" href="/assets/favicon.png">
 
-  <link rel="stylesheet" type="text/css" href="/assets/main.min.css?v=2">
+  <link rel="stylesheet" type="text/css" href="/bundle.css?v=1">
+
+  {+head/}
 </head>
-<body class="body--{@slugify}{pages.results[0].name}{/slugify}">
+<body class="body--{page.key} {+bodyClass/}">
 
-<header>
-  <h1>
-    <a href="/">
-      <img src="/assets/dadi-foundation.svg" alt="DADI Foundation" width="285">
-    </a>
-  </h1>
+<header class="header cnt fm">
+  <div class="grid">
+    <h1 class="col w-1-2">
+      <a href="/">
+        <img src="/assets/mark.svg" alt="DADI Foundation logo" width="285">
+        DADI Foundation
+      </a>
+    </h1>
 
-  <nav class="nav">
-    <ul>
-      {#nav.results}
-        <li><a href="{loc}" {?external}target="_blank"{/external}>{title}</a></li>
-      {/nav.results}
-    </ul>
-  </nav>
+    <nav class="col w-1-2 nav">
+      <form id="search-form" action="/search" class="header__search">
+        <input type="hidden" name="_csrf" value="{csrfToken}">
+        <input placeholder="Search" class="search" id="search" type="search" name="query" value="{params.query|d}" onfocus="this.value = this.value">
+      </form>
+
+      <script>
+        document.getElementById('search-form')
+          .addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = '/search/' + document.getElementById('search').value.trim().replace(' ', '+')
+          });
+      </script>
+
+      <ul>
+        <li>
+          <a 
+            href="/grants"
+            {@select key=params.category}
+              {@eq value="grants"/}
+              {@any}class="active"{/any}
+            {/select}
+          >Grants</a></li>
+        <li>
+          <a 
+            href="/education"
+            {@select key=params.category}
+              {@eq value="education"/}
+              {@any}class="active"{/any}
+            {/select}
+          >Education</a></li>
+        <li>
+          <a
+            href="/research" 
+            {@select key=page.key}
+              {@eq value="research"/}
+              {@eq value="map"/}
+              {@eq value="org"/}
+              {@any}class="active"{/any}
+            {/select}
+          >Research</a></li>
+        <li>
+          <a
+            href="/about"
+            {@eq key=page.key value="about"}
+              class="active"
+            {/eq}
+          >About</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

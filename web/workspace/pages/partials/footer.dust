@@ -1,21 +1,48 @@
-<footer class="cf">
-  <ul class="inline">
-    {?static.email}
-    	<li><a href="mailto:{static.email}">{static.email}</a></li>
-    {/static.email}
-    {?static.twitter}
-    	<li><a href="https://twitter.com/{static.twitter}">Twitter</a></li>
-    {/static.twitter}
-   	{?static.instagram}
-    	<li><a href="https://instagram.com/{static.instagram}">Instagram</a></li>
-    {/static.instagram}
-    {?static.linkedin}
-    	<li><a href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a></li>
-    {/static.linkedin}
-  </ul>
+<footer class="footer">
+  <div class="cnt">
+    <div class="section">
+      <div class="grid">
+        <div class="col w-1-3">
+          <h2 class="section__header fm">Support us</h2>
+        </div>
+        <div class="col w-1-3">
+          <h3>Donate</h3>
+          <p>To support our work directly:</p>
+          <ul class="footer__donate">
+            <li><strong>DADI:</strong> <input class="fm" type="text" readonly value="0xCBf5F2E5e85c4A52300aE71b2749D831a493D6a2"></li>
+            <li><strong>BTC:</strong> <input class="fm" type="text" readonly value="1Fy15uASdwowG9aEcE2xTEzU8Fuz42RoU6"></li>
+            <li><strong>ETH:</strong> <input class="fm" type="text" readonly value="0x7a68f427EF0e42B57FAa3202D644C7Ab528990C3"></li>
+            <li><strong>Contact us to donate in Fiat currency.</strong></li>
+          </ul>
+        </div>
+        <div class="col w-1-3">
+          <h3>Volunteer</h3>
+          <p>If you would like to use your skills to help engage future coders or support the work of amazing human rights defenders, get in touch.</p>
+        </div>
+      </div>
 
-  <div class="about">
-    This site is built with our own technology and is <a href="https://github.com/dadi/foundation">open source</a>.
+      <div class="grid footer__meta fm">
+        <div class="col w-1-2">
+          <p>This site is built with our own technology and is <a target="_blank" href="https://github.com/dadi/foundation">open source</a></p>
+        </div>
+        <div class="col w-1-2 footer__aside">
+          <p>
+          {?static.email}
+            <a target="_blank" href="mailto:{static.email}">{static.email}</a>
+          {/static.email}
+          {?static.twitter}
+            <a target="_blank" href="https://twitter.com/{static.twitter}">Twitter</a>
+          {/static.twitter}
+          {?static.instagram}
+            <a target="_blank" href="https://instagram.com/{static.instagram}">Instagram</a>
+          {/static.instagram}
+          {?static.linkedin}
+            <a target="_blank" href="https://www.linkedin.com/company/{static.linkedin}">LinkedIn</a>
+          {/static.linkedin}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 

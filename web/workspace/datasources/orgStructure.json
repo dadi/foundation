@@ -1,0 +1,8 @@
+{
+  "datasource": {
+    "key": "orgStructure",
+    "source": {
+      "endpoint": "1.0/foundation/organisationStructure"
+    }
+  }
+}

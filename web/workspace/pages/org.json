@@ -1,0 +1,17 @@
+{
+  "page": {
+    "key": "org"
+  },
+  "datasources": [
+    "organisations",
+    "static"
+  ],
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/research/org/:org?"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{>"partials/header" /}
+
+{<bodyClass}body--dark{/bodyClass}
+
+{<title}Research{/title}
+
+<main class="cnt">
+  <section class="grid section section--lead cta-map">
+    <div class="col w-1-2">
+      <h2>Research</h2>
+    </div>
+    <div class="col col--right w-1-2">
+      <p class="large">We conduct research into how to minimise the harms of tech on democracy and how to maximise its use as a tool to protect, improve and expand our rights.</p>
+      <p class="large">Explore our resources to discover more about what’s happening around the world to harness tech for democracy.</p>
+
+      <p class="section__more"><a class="btn" href="/research/map">Open organisation map</a></p>
+    </div>
+  </section>
+</main>
+
+{>"partials/footer" /}

@@ -1,0 +1,23 @@
+{
+  "page": {
+    "key": "map"
+  },
+  "datasources": [
+    "organisations",
+    "static",
+    "orgDemocracy",
+    "orgFocus",
+    "orgStructure",
+    "orgTech",
+    "orgType"
+  ],
+  "events": [
+    "static",
+    "map"
+  ],
+  "routes": [
+    {
+      "path": "/research/map"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<dd>
+  <label>
+    <input {#mapSelected}{@eq key=_id value="{.}"}checked{/eq}{:else}checked{/mapSelected} type="checkbox" name="map[{field}][{_id}]">{title}
+  </label>
+</dd>

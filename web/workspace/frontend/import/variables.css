@@ -1,0 +1,13 @@
+:root {
+  --color-white: #f9f8f6;
+  --color-text: #04111d;
+  --color-accent: #f44b00;
+  --color-accent-invert: #fff;
+
+  --color-tint-light: #d8d7d6;
+  --color-tint-medium: #A5A5A2;
+  --color-tint: #595a5a;
+}
+
+@custom-media --bs (max-width: 800px);
+@custom-media --bl (min-width: 800px);

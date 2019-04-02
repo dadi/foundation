@@ -1,0 +1,8 @@
+{
+  "datasource": {
+    "key": "orgTech",
+    "source": {
+      "endpoint": "1.0/foundation/techFocus"
+    }
+  }
+}

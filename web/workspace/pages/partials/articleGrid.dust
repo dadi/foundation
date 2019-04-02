@@ -1,0 +1,8 @@
+<article class="latest__article col w-1-3">
+  <a href="/{category[0].slug}/{slug}">
+    <h3 class="latest__header">{title}</h3>
+    <p class="latest__date">{@formatDate unix=publishedAt format="YYYY/MM/DD" /}</p>
+    <p class="latest__excerpt">{excerpt}</p>
+    <p class="latest__category">— {category[0].name}</p>
+  </a>
+</article>

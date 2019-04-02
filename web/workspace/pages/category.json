@@ -1,0 +1,21 @@
+{
+  "page": {
+    "key": "category"
+  },
+  "datasources": [
+    "categories",
+    "articles-all",
+    "static"
+  ],
+  "requiredDatasources": [
+    "categories"
+  ],
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/:category"
+    }
+  ]
+}

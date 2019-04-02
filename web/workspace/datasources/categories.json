@@ -1,0 +1,12 @@
+{
+  "datasource": {
+    "key": "categories",
+    "source": {
+      "endpoint": "1.0/foundation/categories"
+    },
+    "requestParams": [{
+      "param": "category",
+      "field": "slug"
+    }]
+  }
+}

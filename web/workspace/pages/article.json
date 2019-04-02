@@ -1,0 +1,20 @@
+{
+  "page": {
+    "key": "article"
+  },
+  "datasources": [
+    "articles-all",
+    "static"
+  ],
+  "requiredDatasources": [
+    "articles-all"
+  ],
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/:category/:title"
+    }
+  ]
+}

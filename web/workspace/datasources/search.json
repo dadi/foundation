@@ -1,0 +1,21 @@
+{
+  "datasource": {
+    "key": "search",
+    "source": {
+      "endpoint": "1.0/foundation/articles/search?q={q}"
+    },
+    "count": 24,
+    "paginate": true,
+    "sort": {
+      "_createdAt": -1
+    },
+    "requestParams": [
+      {
+        "source": "request",
+        "param": "query",
+        "field": "q",
+        "target": "endpoint"
+      }
+    ]
+  }
+} 

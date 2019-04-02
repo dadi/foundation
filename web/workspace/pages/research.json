@@ -1,0 +1,16 @@
+{
+  "page": {
+    "key": "research"
+  },
+  "datasources": [
+    "static"
+  ],
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/research"
+    }
+  ]
+}

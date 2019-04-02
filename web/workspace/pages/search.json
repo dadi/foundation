@@ -1,0 +1,20 @@
+{
+  "page": {
+    "key": "search"
+  },
+  "settings": {
+    "cache": false
+  },
+  "datasources": [
+    "search",
+    "static"
+  ],
+  "events": [
+    "static"
+  ],
+  "routes": [
+    {
+      "path": "/search/:query?"
+    }
+  ]
+}

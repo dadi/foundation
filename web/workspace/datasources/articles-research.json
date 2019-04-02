@@ -1,0 +1,15 @@
+{
+  "datasource": {
+    "key": "articles-homepage",
+    "source": {
+      "endpoint": "1.0/foundation/articles"
+    },
+    "sort": {
+      "publishedAt": -1
+    },
+    "filter": {
+      "published": true
+    },
+    "count": 3
+  }
+}

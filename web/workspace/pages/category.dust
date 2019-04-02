@@ -1,0 +1,28 @@
+{>"partials/header" /}
+
+{<bodyClass}body--tint{/bodyClass}
+
+{<title}{categories.results[0].name}{/title}
+
+<main class="cnt">
+  <section class="grid section section--lead">
+    <div class="col w-1-2">
+      <h2>{categories.results[0].name}</h2>
+    </div>
+    <div class="col col--right w-1-2">
+      <p class="large">{categories.results[0].desc}</p>
+    </div>
+  </section>
+
+  <section class="latest">
+    <div class="grid">
+      {#articles-all.results}
+        {>"partials/articleGrid" /}
+      {:else}
+        <p style="text-align:center">Coming soon…</p>
+      {/articles-all.results}
+    </div>
+  </section>
+</main>
+
+{>"partials/footer" /}
