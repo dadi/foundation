@@ -122,6 +122,18 @@
         }
       }
     },
+    "democraticFreedom": {
+      "type": "Number",
+      "required": false,
+      "label": "Democratic freedom score /100",
+      "publish": {
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": true
+        }
+      }
+    },
     "url": {
       "type": "String",
       "required": false,
