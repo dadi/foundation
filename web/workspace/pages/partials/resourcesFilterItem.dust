@@ -1,0 +1,5 @@
+<dd>
+  <label>
+    <input {#categorySelected}{@eq key=_id value="{.}"}checked{/eq}{:else}checked{/categorySelected} type="checkbox" name="category[{field}][{_id}]">{name}
+  </label>
+</dd>

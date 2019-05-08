@@ -79,7 +79,7 @@
   margin-bottom: 0;
 }
 .latest__header {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 0.6em;
   color: var(--color-accent);
   border-top: 1px solid var(--color-tint-light);
@@ -87,6 +87,20 @@
 }
 .latest__article {
   margin-top: 30px;
+}
+.latest__article .img {
+  height: 0;
+  overflow: hidden;
+  padding-top: 66%;
+  position: relative;
+}
+.latest__article img {
+  height: auto;
+  left: 0;
+  position: absolute;
+  right:0;
+  top: 0;
+  width: 100%;
 }
 .latest__excerpt,
 .latest__category {
@@ -115,6 +129,10 @@
   text-decoration: underline;
 }
 
+.btn-more {
+  font-size: 1rem;
+  color: var(--color-accent);
+}
 
 .approach__highlights {
   text-align: center;

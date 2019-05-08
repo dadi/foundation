@@ -12,7 +12,7 @@
   </section>
 
   <section class="section section--no-border latest">
-    <h2 class="section__header fm">Latest News</h2>
+    <h2 class="section__header fm">Latest Resources</h2>
 
     <div class="grid">
       {#articles-homepage.results}
@@ -20,7 +20,7 @@
       {/articles-homepage.results}
     </div>
 
-    <p class="section__more"><a class="btn" href="/resources">Read more articles</a></p>
+    <p class="section__more"><a class="btn" href="/resources">See more articles</a></p>
   </section>
 
   <section class="section approach">

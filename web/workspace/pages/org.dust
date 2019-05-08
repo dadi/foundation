@@ -6,7 +6,8 @@
 
 <main class="cnt">
   <div class="section section--lead">
-    <h2><a href="/research/orgs/">
+    <h2 class="section__header fm">
+      <a href="/research/orgs/">
       Organisations<br> 
       <span class="org__name">{organisations.results[0].title}</span>
     </a></h2>
@@ -16,7 +17,12 @@
     <div class="grid">
       <div class="col w-1-2">
         {?about}{@markdown}{about}{/markdown}{/about}
-        <p><a href="{url}" class="org__website btn" target="_blank">Visit website</a></p>
+        <p>
+          <a href="{url}" class="org__website btn" target="_blank">Visit website</a>
+          {?caseStudy[0]}
+            <a href="/{caseStudy[0].category[0].slug}/{caseStudy[0].slug}" class="org__casestudy btn">View case study</a>
+          {/caseStudy[0]}
+        </p>
         <p>Contact details:<br>{?contact}{contact}{:else}None yet{/contact}</p>
       </div>
       <div class="col w-1-2 org__meta">

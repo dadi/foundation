@@ -3,6 +3,7 @@
     "key": "research"
   },
   "datasources": [
+    "articles-interview",
     "static"
   ],
   "events": [

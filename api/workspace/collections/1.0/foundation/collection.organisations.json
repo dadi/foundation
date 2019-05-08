@@ -127,10 +127,27 @@
       "required": false,
       "label": "Democratic freedom score /100",
       "publish": {
+        "section": "Details",
         "placement": "sidebar",
         "display": {
           "edit": true,
           "list": true
+        }
+      }
+    },
+    "caseStudy": {
+      "type": "Reference",
+      "settings": {
+        "collection": "articles"
+      },
+      "required": false,
+      "label": "Case study",
+      "publish": {
+        "section": "Details",
+        "placement": "sidebar",
+        "display": {
+          "edit": true,
+          "list": false
         }
       }
     },

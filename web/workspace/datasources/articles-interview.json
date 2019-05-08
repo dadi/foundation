@@ -1,0 +1,16 @@
+{
+  "datasource": {
+    "key": "articles-interview",
+    "source": {
+      "endpoint": "1.0/foundation/articles"
+    },
+    "sort": {
+      "publishedAt": -1
+    },
+    "filter": {
+      "published": true,
+      "category.slug": "interview"
+    },
+    "count": 3
+  }
+}

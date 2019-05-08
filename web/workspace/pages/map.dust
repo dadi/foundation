@@ -27,6 +27,7 @@ var map = new mapboxgl.Map({
 var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
 
 for (var i = 0; i < data.length; i++) { 
+  console.log('data[i] :', data[i]);
   plotOrg(data[i], map);
 }
 
@@ -61,13 +62,13 @@ function plotOrg(org, map) {
 <main class="cnt">
   <form method="post" action="/research/map" class="directory__filters">
     <div class="grid">
-      <dl class="col w-1-5">
-        <dt>Type</dt>
+      <dl class="col w-1-3">
+        <dt>Activity</dt>
         {#orgType.results}
           {>"partials/mapFilterItem" field="organisationType" /}
         {/orgType.results}
       </dl>
-      <dl class="col w-1-5">
+      <!--<dl class="col w-1-5">
         <dt>Structure</dt>
         {#orgStructure.results}
           {>"partials/mapFilterItem" field="structure" /}
@@ -78,14 +79,14 @@ function plotOrg(org, map) {
         {#orgFocus.results}
           {>"partials/mapFilterItem" field="focus" /}
         {/orgFocus.results}
-      </dl>
-      <dl class="col w-1-5">
+      </dl>-->
+      <dl class="col w-1-3">
         <dt>Democratic focus</dt>
         {#orgDemocracy.results}
           {>"partials/mapFilterItem" field="democracyFocus" /}
         {/orgDemocracy.results}
       </dl>     
-      <dl class="col w-1-5">
+      <dl class="col w-1-3">
         <dt>Technology focus</dt>
         {#orgTech.results}
           {>"partials/mapFilterItem" field="techFocus" /}

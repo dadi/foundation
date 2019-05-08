@@ -16,6 +16,41 @@
       <p class="section__more"><a class="btn" href="/research/map">Open organisation map</a></p>
     </div>
   </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="col w-1-2">
+        <h2>Interviews</h2>
+      </div>
+    </div>
+    
+    <div class="grid">
+      {#articles-interview.results}
+        {>"partials/articleGrid" /}
+      {/articles-interview.results}
+    </div>
+    <div class="grid">
+      <a class="btn" style="width: 100%; text-align: center;" href="/interview">Read more interviews</a>
+    </div>
+  </section>
+
+  <section class="grid section">
+    <div class="grid">
+      <div class="col w-1-2">
+        <h2>Reports</h2>
+      </div>
+    </div>
+    
+    <div class="grid">
+      {#articles-interview.results}
+        {>"partials/articleGrid" /}
+      {/articles-interview.results}
+    </div>
+
+    <div class="grid">
+      <a class="btn" style="width: 100%; text-align: center;" href="/report">Read more reports</a>
+    </div>
+  </section>
 </main>
 
 {>"partials/footer" /}
