@@ -24,6 +24,10 @@ var map = new mapboxgl.Map({
   zoom: 1.4
 });
 
+map.scrollZoom.disable();
+map.doubleClickZoom.disable();
+map.addControl(new mapboxgl.NavigationControl());
+
 var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
 
 for (var i = 0; i < data.length; i++) { 
