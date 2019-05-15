@@ -12,6 +12,7 @@
     "orgType"
   ],
   "events": [
+    "arrangeFilters",
     "static",
     "map"
   ],

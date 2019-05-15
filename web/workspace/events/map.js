@@ -25,7 +25,7 @@ const Event = function (req, res, data, callback) {
       .map((orgs, letter) => ({ letter, orgs }))
       .value()
   }
-    
+
   // Fin
   callback()
 }
